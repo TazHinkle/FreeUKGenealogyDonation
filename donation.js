@@ -40,7 +40,6 @@ var advanceClickHandler = function() {
     currency = document.querySelector('input[name="drone"]:checked').value;
     clearTitleDestination();
     clearContentSelector();
-    console.log(currency);
     var provider = document.getElementById(currency + '-provider-selector')
     provider.style.display = 'block';
         if(currency === 'gb-pounds') {
@@ -48,20 +47,31 @@ var advanceClickHandler = function() {
                 'click',
                 ukProviderClickHandler,
                 false
-        )}
+        );
+            document.getElementById('title-kindlink').style.display = 'block';
+            document.getElementById('content-kindlink').style.display = 'block';
+        }
+        else {
+            var paypalTitle = document.getElementById('title-paypal');
+            paypalTitle.style.display = 'block';
+            for(var l = 0; l < previousCollection.length; l++) {
+                previousCollection[l].style.width = "20%";
+            }
+        }
 };
 
 var previousEventHandler = function() {
-    clearTitleDestination();
-    if(ukProviderContainer.style.display !== 'none' ||
-        document.getElementById('us-dollars-provider-selector').style.display !== 'none' ||
-        document.getElementById('au-dollars-provider-selector').style.display  !== 'none'
-    ){
+    var selectorContainer = document.getElementById(currency + '-provider-selector');
+    if(selectorContainer.style.display !== 'none'){
+        clearTitleDestination();
         clearContentSelector();
+        clearContentDestination();
         currencyContent.style.display = 'block';
         var currencyTitle = document.getElementById('title-currency');
         currencyTitle.style.display = 'block';
-        clearContentDestination();
+        for(var i = 0; i<previousCollection.length; i++) {
+            previousCollection[i].style.width = "50%";
+        }
     }
 };
 

@@ -1,0 +1,56 @@
+.payment-holder {
+    margin: auto;
+    text-align: center;
+}
+
+#currency-selector .d-inline {
+    text-align: left;
+}
+
+.d-inline {
+    display: inline-block;
+}
+
+#content-bank-transfer .transfer-list {
+    text-align: left;
+    margin-left: 40%;
+}
+
+#content-cheque .address-list {
+    text-align: left;
+    margin-left: 35%;
+}
+
+.payment-holder h6 {
+    font-family: Source Sans Pro, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #444444;
+}
+
+/* Primary Button Rounded */
+.payment-holder button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 16px;
+    color: #fff;
+    margin: auto;
+    position: static;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+
+    /* Teal */
+    background: #00857E;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}

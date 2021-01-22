@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>experimental-somethings</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <div class="payment-holder">
@@ -25,39 +26,46 @@
             >
                 <p>Bank Transfer</p>
             </div>
+            <div id="title-cheque"
+                 style="display: none;"
+            >
+                <p>Cheque</p>
+            </div>
         </div>
 
         <div id="content-selector">
             <div id="currency-selector">
-                <div>
-                    <input type="radio" id="gb-pounds" name="drone" value="gb-pounds">
-                    <label for="gb-pounds">British pounds sterling</label>
-                </div>
+                <div class="d-inline">
+                    <div>
+                        <input type="radio" id="gb-pounds" name="drone" value="gb-pounds">
+                        <label for="gb-pounds">British pounds sterling</label>
+                    </div>
 
-                <div>
-                    <input type="radio" id="us-dollars" name="drone" value="us-dollars">
-                    <label for="us-dollars">American Dollars</label>
-                </div>
+                    <div>
+                        <input type="radio" id="us-dollars" name="drone" value="us-dollars">
+                        <label for="us-dollars">American Dollars</label>
+                    </div>
 
-                <div>
-                    <input type="radio" id="c-dollars" name="drone" value="c-dollars">
-                    <label for="c-dollars">Canadian Dollars</label>
-                </div>
-                <div>
-                    <input type="radio" id="au-dollars" name="drone" value="au-dollars">
-                    <label for="au-dollars">Australian Dollars</label>
-                </div>
+                    <div>
+                        <input type="radio" id="c-dollars" name="drone" value="c-dollars">
+                        <label for="c-dollars">Canadian Dollars</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="au-dollars" name="drone" value="au-dollars">
+                        <label for="au-dollars">Australian Dollars</label>
+                    </div>
 
-                <div>
-                    <input type="radio" id="nz-dollars" name="drone" value="nz-dollars">
-                    <label for="nz-dollars">New Zealand Dollars</label>
-                </div>
+                    <div>
+                        <input type="radio" id="nz-dollars" name="drone" value="nz-dollars">
+                        <label for="nz-dollars">New Zealand Dollars</label>
+                    </div>
 
-                <div>
-                    <input type="radio" id="euro" name="drone" value="euro">
-                    <label for="euro">Euro</label>
+                    <div>
+                        <input type="radio" id="euro" name="drone" value="euro">
+                        <label for="euro">Euro</label>
+                    </div>
+                    <div><button id="next-button" type="submit">Next</button></div>
                 </div>
-                <div><button id="next-button" type="submit">Next</button></div>
 
             </div>
             <div
@@ -81,6 +89,11 @@
                     </button>
                 </div>
                 <div>
+                    <button data-provider="cheque">
+                        Cheque
+                    </button>
+                </div>
+                <div>
                     <button class="previous">
                         Previous
                     </button>
@@ -90,7 +103,38 @@
                 id="us-dollars-provider-selector"
                 style="display: none;"
             >
-                <p>Someone selected USD</p>
+                <p>
+                    <form action="https://www.paypal.com/donate" method="post" target="_top">
+                        <input type="hidden" name="hosted_button_id" value="JKB65FJGRATHS" />
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+                               name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
+                        />
+                        <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                    </form>
+                </p>
+                <button class="previous">
+                    Previous
+                </button>
+            </div>
+            <div id="c-dollars-provider-selector"
+                 style="display: none;"
+            >
+                <p>
+                    <form action="https://www.paypal.com/donate" method="post" target="_top">
+                        <input type="hidden" name="hosted_button_id" value="3XMXJ8NHXLZR8" />
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0"
+                               name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
+                        />
+                        <img alt="" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
+                    </form>
+                </p>
+                <p>
+                    <form action="https://www.paypal.com/donate" method="post" target="_top">
+                        <input type="hidden" name="hosted_button_id" value="G5GD3T86WYPPW" />
+                        <input type="image" src="https://www.paypalobjects.com/fr_CA/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                        <img alt="" src="https://www.paypal.com/fr_CA/i/scr/pixel.gif" width="1" height="1" />
+                    </form>
+                </p>
                 <button class="previous">
                     Previous
                 </button>
@@ -98,11 +142,53 @@
             <div id="au-dollars-provider-selector"
                  style="display: none;"
             >
-                <p>Someone selected AUD</p>
+                <p>
+                <form action="https://www.paypal.com/donate" method="post" target="_top">
+                    <input type="hidden" name="hosted_button_id" value="VKBJ5SAZRT3HW" />
+                    <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif" border="0"
+                           name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
+                    />
+                    <img alt="" border="0" src="https://www.paypal.com/en_AU/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+
+                </p>
                 <button class="previous">
                     Previous
                 </button>
             </div>
+            <div id="nz-dollars-provider-selector"
+                 style="display: none;"
+            >
+                <p>
+                    <form action="https://www.paypal.com/donate" method="post" target="_top">
+                        <input type="hidden" name="hosted_button_id" value="83G6ZDU5V8HZ4" />
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0"
+                               name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
+                        />
+                        <img alt="" src="https://www.paypal.com/en_NZ/i/scr/pixel.gif" width="1" height="1" />
+                    </form>
+                </p>
+                <button class="previous">
+                    Previous
+                </button>
+            </div>
+            <div id="euro-provider-selector"
+                 style="display: none;"
+            >
+                <p>
+                    <form action="https://www.paypal.com/donate" method="post" target="_top">
+                        <input type="hidden" name="hosted_button_id" value="GXWGGPW8QNMLL" />
+                        <input type="image" src="https://www.paypalobjects.com/en_US/FR/i/btn/btn_donateCC_LG.gif" border="0"
+                               name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
+                        />
+                        <img alt="" border="0" src="https://www.paypal.com/en_FR/i/scr/pixel.gif" width="1" height="1" />
+                    </form>
+                </p>
+                <button class="previous">
+                    Previous
+                </button>
+            </div>
+
         </div>
         <div id="content-destination">
             <div id="content-default">
@@ -112,43 +198,79 @@
                 id="content-kindlink"
                 style="display: none;"
             >
-                <h1>
-                    Pay your goats via PayGoat
-                </h1>
-                <div class="image-holder">
-
-                </div>
-                <p>
-                    the dodgy online way to pay goats.
-                </p>
+                <iframe
+                    src="https://donate.kindlink.com/free-uk-genealogy/3553"
+                    style="width: 100%;
+                    height: 1400px;
+                    border: 0;">
+                    <p>Your browser does not support iframes.</p>
+                </iframe>
             </div>
             <div
                     id="content-paypal"
                     style="display: none;"
             >
-                <h1>
-                    Feed your goat
-                </h1>
-                <div class="image-holder">
-
-                </div>
                 <p>
-                    it's what they want anyway.
+                    <form action="https://www.paypal.com/donate" method="post" target="_top">
+                        <input type="hidden" name="hosted_button_id" value="MBP798XKMCCP4" />
+                        <input
+                               type="image"
+                               src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif"
+                               name="submit" title="PayPal - The safer, easier way to pay online!"
+                               alt="Donate with PayPal button"
+                        />
+                        <img alt="" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
+                    </form>
                 </p>
+
+
             </div>
             <div
                     id="content-bank-transfer"
                     style="display: none;"
             >
-                <h1>
-                    Pet your goat
-                </h1>
+                <h2>
+                    Bank Transfer (UK only)
+                </h2>
+                <p>
+                    Funds can be transferred directly to Free UK Genealogy's bank account using internet banking.
+                </p>
+                <h3>
+                    Account Details
+                </h3>
+                <div class="transfer-list">
+                    <ul>
+                        <li>Sort Code: 40-52-40</li>
+                        <li>Account Number: 00025629</li>
+                        <li>Account Name: Free UK Genealogy</li>
+                    </ul>
+                </div>
                 <div class="image-holder">
 
                 </div>
-                <p>
-                    you know you want to.
-                </p>
+            </div>
+            <div
+                    id="content-cheque"
+                    style="display: none;"
+            >
+                <h2>
+                    Cheque
+                </h2>
+                <p>Cheques made payable to Free UK Genealogy can be sent to: </p>
+
+                    <div class="address-list">
+                        <ul style="list-style-type: none">
+                            <li>Free UK Genealogy</li>
+                            <li>Erw Wen, Harford,</li>
+                            <li>Llanwrda,</li>
+                            <li>Carmarthenshire</li>
+                            <li>SA19 8DT,</li>
+                            <li>United Kingdom</li>
+                        </ul>
+                    </div>
+                <div class="image-holder">
+
+                </div>
             </div>
         </div>
         <script src="./donation.js"></script>

@@ -58,7 +58,7 @@ var advanceClickHandler = function() {
             var paypalTitle = document.getElementById('title-paypal');
             paypalTitle.style.display = 'block';
             for(var l = 0; l < previousCollection.length; l++) {
-                previousCollection[l].style.width = "20%";
+                previousCollection[l].style.width = "auto";
             }
         }
 };
@@ -66,6 +66,7 @@ var advanceClickHandler = function() {
 var previousEventHandler = function() {
     var selectorContainer = document.getElementById(currency + '-provider-selector');
     if(selectorContainer.style.display !== 'none'){
+        document.getElementById('giftaid-eligible').style.display = 'none';
         clearTitleDestination();
         clearContentSelector();
         clearContentDestination();
@@ -80,6 +81,7 @@ var previousEventHandler = function() {
 };
 
 var ukProviderClickHandler = function(event) {
+    document.getElementById('giftaid-eligible').style.display = 'none';
     resetGiftaid();
     var provider = event.target.dataset.provider;
     if(provider) {
@@ -97,6 +99,9 @@ var ukProviderClickHandler = function(event) {
         var titleContent = document.getElementById('title-' + provider);
         titleContent.style.display = 'block';
     }
+    if(provider === 'bank-transfer' || provider === 'cheque') {
+        document.getElementById('giftaid-eligible').style.display = 'block';
+    }
 
 };
 
@@ -105,12 +110,13 @@ var resetGiftaid = function() {
     document.getElementById('giftaid-form-cheque').style.display = 'none';
     document.getElementById('giftaid-option-cheque').style.display = 'block';
     document.getElementById('giftaid-option-transfer').style.display = 'block';
+    document.getElementById('thank-you').style.display = 'none';
 }
 
 var loadGiftaidForm = function() {
     var giftaidRadioCheque = document.querySelector('input[name="ga-selector"]:checked').value;
     var giftaidRadioTransfer = document.querySelector('input[name="ga-selector"]:checked').value;
-
+    document.getElementById('giftaid-eligible').style.display = 'none';
     if (giftaidRadioCheque === 'giftaid' ||
        giftaidRadioTransfer === 'giftaid'
     ) {
@@ -124,6 +130,11 @@ var loadGiftaidForm = function() {
             document.getElementById('giftaid-option-cheque').style.display = 'none';
             document.getElementById('giftaid-form-cheque').style.display = 'inline';
         }
+    }
+    else {
+        document.getElementById('giftaid-option-cheque').style.display = 'none';
+        document.getElementById('giftaid-option-transfer').style.display = 'none';
+        document.getElementById('thank-you').style.display = 'block';
     }
 };
 

@@ -34,23 +34,61 @@
     color: #444444;
 }
 
-/* Primary Button Rounded */
+ /*Primary Button Rounded*/
 .payment-holder button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 8px 16px;
-    color: #fff;
-    margin: auto;
-    position: static;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 2.15384615; /* 28px */
+    min-height: 30px;
+    margin: 0;
+    padding: 0 10px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-sizing: border-box;
     width: 50%;
-
+    color: #fff;
     /* Teal */
     background: #00857E;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
 }
+
+.payment-holder .next-giftaid {
+    width: 20%;
+}
+
+/*.payment-holder .button-primary {*/
+/*    background: #007cba;*/
+/*    border-color: #007cba;*/
+/*    color: #fff;*/
+/*    text-decoration: none;*/
+/*    text-shadow: none;*/
+/*}*/
+
+.payment-holder .button:hover,
+.payment-holder .button:focus {
+    background: #007cba;
+    border-color: #007cba;
+    color: #fff;
+}
+
+/*.payment-holder .button-primary.focus,*/
+/*.payment-holder .button-primary:focus {*/
+/*    box-shadow:*/
+/*            0 0 0 1px #fff,*/
+/*            0 0 0 3px #007cba;*/
+/*}*/
+
+/*.payment-holder .button-primary.active,*/
+/*.payment-holder .button-primary.active:hover,*/
+/*.payment-holder .button-primary.active:focus,*/
+/*.payment-holder .button-primary:active {*/
+/*    background: #00669b;*/
+/*    border-color: #00669b;*/
+/*    box-shadow: none;*/
+/*    color: #fff;*/
+/*}*/

@@ -8,6 +8,9 @@ var previousCollection = document.getElementsByClassName('previous');
 var currencyContent = document.getElementById('currency-selector');
 var titleDestination = document.getElementById('title-payment');
 var currency = '';
+var giftaidNext = document.getElementsByClassName('next-giftaid');
+var contentBank = document.getElementById('content-bank-transfer');
+var contentCheque = document.getElementById('content-cheque');
 
 var clearContentDestination = function() {
     var contentItems = Array.prototype.slice.apply(
@@ -66,6 +69,7 @@ var previousEventHandler = function() {
         clearTitleDestination();
         clearContentSelector();
         clearContentDestination();
+        resetGiftaid();
         currencyContent.style.display = 'block';
         var currencyTitle = document.getElementById('title-currency');
         currencyTitle.style.display = 'block';
@@ -76,6 +80,7 @@ var previousEventHandler = function() {
 };
 
 var ukProviderClickHandler = function(event) {
+    resetGiftaid();
     var provider = event.target.dataset.provider;
     if(provider) {
         clearContentDestination();
@@ -92,12 +97,47 @@ var ukProviderClickHandler = function(event) {
         var titleContent = document.getElementById('title-' + provider);
         titleContent.style.display = 'block';
     }
+
+};
+
+var resetGiftaid = function() {
+    document.getElementById('giftaid-form-transfer').style.display = 'none';
+    document.getElementById('giftaid-form-cheque').style.display = 'none';
+    document.getElementById('giftaid-option-cheque').style.display = 'block';
+    document.getElementById('giftaid-option-transfer').style.display = 'block';
+}
+
+var loadGiftaidForm = function() {
+    var giftaidRadioCheque = document.querySelector('input[name="ga-selector"]:checked').value;
+    var giftaidRadioTransfer = document.querySelector('input[name="ga-selector"]:checked').value;
+
+    if (giftaidRadioCheque === 'giftaid' ||
+       giftaidRadioTransfer === 'giftaid'
+    ) {
+        if (contentBank.style.display !== 'none;') {
+            contentBank.style.display = 'inline;';
+            document.getElementById('giftaid-option-transfer').style.display = 'none';
+            document.getElementById('giftaid-form-transfer').style.display = 'inline';
+        }
+        if (contentCheque.style.display !== 'none;') {
+            contentCheque.style.display = 'inline;';
+            document.getElementById('giftaid-option-cheque').style.display = 'none';
+            document.getElementById('giftaid-form-cheque').style.display = 'inline';
+        }
+    }
 };
 
 nextButton.addEventListener(
     'click',
     advanceClickHandler
 );
+
+Array.from(giftaidNext).forEach(function(giftaidNextButton) {
+    giftaidNextButton.addEventListener(
+        'click',
+        loadGiftaidForm
+    );
+});
 
 Array.from(previousCollection).forEach(function(previous) {
     previous.addEventListener(

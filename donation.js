@@ -51,6 +51,7 @@ var advanceClickHandler = function() {
                 ukProviderClickHandler,
                 false
         );
+            document.getElementById('kindlink-button').focus();
             document.getElementById('title-kindlink').style.display = 'block';
             document.getElementById('content-kindlink').style.display = 'block';
         }

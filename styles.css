@@ -47,7 +47,7 @@
     border-width: 1px;
     border-style: solid;
     -webkit-appearance: none;
-    border-radius: 3px;
+    border-radius: 20px;
     white-space: nowrap;
     box-sizing: border-box;
     width: 50%;
@@ -55,24 +55,28 @@
     /* Teal */
     background: #00857E;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    outline: none;
+}
+
+.payment-holder button:hover {
+    text-decoration: underline;
 }
 
 .payment-holder .next-giftaid {
     width: 20%;
 }
 
-/*.payment-holder .button-primary {*/
-/*    background: #007cba;*/
-/*    border-color: #007cba;*/
-/*    color: #fff;*/
-/*    text-decoration: none;*/
-/*    text-shadow: none;*/
-/*}*/
+.payment-holder #next-button {
+    width: 100%;
+}
 
-.payment-holder .button:hover,
-.payment-holder .button:focus {
-    background: #007cba;
-    border-color: #007cba;
+.payment-holder #gb-pounds-provider-selector button {
+    background: #F4F4F4;
+    color: #000;
+}
+
+.payment-holder #gb-pounds-provider-selector button:focus {
+    background: #00857E;
     color: #fff;
 }
 

@@ -7,7 +7,8 @@
 </head>
 <body>
     <div class="payment-holder">
-        <div id="title-payment">
+        <div
+			id="title-payment">
             <div id="title-currency">
                 <p>Select Currency</p>
             </div>
@@ -73,28 +74,40 @@
                  style="display: none;"
             >
                 <div>
-                    <button data-provider="kindlink">
+                    <button
+						id="kindlink-button"
+						data-provider="kindlink"
+						style="margin-bottom: 5px;"
+					>
                         kindlink
                     </button>
                 </div>
 
                 <div>
-                    <button data-provider="paypal">
+                    <button data-provider="paypal"
+							style="margin-bottom: 5px;"
+					>
                         paypal
                     </button>
                 </div>
                 <div>
-                    <button data-provider="bank-transfer">
+                    <button data-provider="bank-transfer"
+							style="margin-bottom: 5px;"
+					>
                         Bank Transfer
                     </button>
                 </div>
                 <div>
-                    <button data-provider="cheque">
+                    <button data-provider="cheque"
+							style="margin-bottom: 5px;"
+					>
                         Cheque
                     </button>
                 </div>
                 <div>
-                    <button class="previous">
+                    <button class="previous"
+							style="margin-bottom: 5px;"
+					>
                         Previous
                     </button>
                 </div>
@@ -103,15 +116,13 @@
                 id="us-dollars-provider-selector"
                 style="display: none;"
             >
-                <p>
-                    <form action="https://www.paypal.com/donate" method="post" target="_top">
-                        <input type="hidden" name="hosted_button_id" value="JKB65FJGRATHS" />
-                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-                               name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
-                        />
-                        <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                    </form>
-                </p>
+				<form action="https://www.paypal.com/donate" method="post" target="_top">
+					<input type="hidden" name="hosted_button_id" value="JKB65FJGRATHS" />
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+						   name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
+					/>
+					<img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+				</form>
                 <button class="previous">
                     Previous
                 </button>
@@ -119,22 +130,19 @@
             <div id="c-dollars-provider-selector"
                  style="display: none;"
             >
-                <p>
-                    <form action="https://www.paypal.com/donate" method="post" target="_top">
-                        <input type="hidden" name="hosted_button_id" value="3XMXJ8NHXLZR8" />
-                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0"
-                               name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
-                        />
-                        <img alt="" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
-                    </form>
-                </p>
-                <p>
-                    <form action="https://www.paypal.com/donate" method="post" target="_top">
-                        <input type="hidden" name="hosted_button_id" value="G5GD3T86WYPPW" />
-                        <input type="image" src="https://www.paypalobjects.com/fr_CA/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                        <img alt="" src="https://www.paypal.com/fr_CA/i/scr/pixel.gif" width="1" height="1" />
-                    </form>
-                </p>
+				<form action="https://www.paypal.com/donate" method="post" target="_top">
+					<input type="hidden" name="hosted_button_id" value="3XMXJ8NHXLZR8" />
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+						   name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
+					/>
+					<img alt="" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
+				</form>
+
+				<form action="https://www.paypal.com/donate" method="post" target="_top">
+					<input type="hidden" name="hosted_button_id" value="G5GD3T86WYPPW" />
+					<input type="image" src="https://www.paypalobjects.com/fr_CA/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+					<img alt="" src="https://www.paypal.com/fr_CA/i/scr/pixel.gif" width="1" height="1" />
+				</form>
                 <button class="previous">
                     Previous
                 </button>
@@ -142,16 +150,14 @@
             <div id="au-dollars-provider-selector"
                  style="display: none;"
             >
-                <p>
                 <form action="https://www.paypal.com/donate" method="post" target="_top">
                     <input type="hidden" name="hosted_button_id" value="VKBJ5SAZRT3HW" />
-                    <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif" border="0"
+                    <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif"
                            name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
                     />
-                    <img alt="" border="0" src="https://www.paypal.com/en_AU/i/scr/pixel.gif" width="1" height="1" />
+                    <img alt="" src="https://www.paypal.com/en_AU/i/scr/pixel.gif" width="1" height="1" />
                 </form>
 
-                </p>
                 <button class="previous">
                     Previous
                 </button>
@@ -159,15 +165,13 @@
             <div id="nz-dollars-provider-selector"
                  style="display: none;"
             >
-                <p>
-                    <form action="https://www.paypal.com/donate" method="post" target="_top">
-                        <input type="hidden" name="hosted_button_id" value="83G6ZDU5V8HZ4" />
-                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0"
-                               name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
-                        />
-                        <img alt="" src="https://www.paypal.com/en_NZ/i/scr/pixel.gif" width="1" height="1" />
-                    </form>
-                </p>
+				<form action="https://www.paypal.com/donate" method="post" target="_top">
+					<input type="hidden" name="hosted_button_id" value="83G6ZDU5V8HZ4" />
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+						   name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
+					/>
+					<img alt="" src="https://www.paypal.com/en_NZ/i/scr/pixel.gif" width="1" height="1" />
+				</form>
                 <button class="previous">
                     Previous
                 </button>
@@ -175,15 +179,13 @@
             <div id="euro-provider-selector"
                  style="display: none;"
             >
-                <p>
-                    <form action="https://www.paypal.com/donate" method="post" target="_top">
-                        <input type="hidden" name="hosted_button_id" value="GXWGGPW8QNMLL" />
-                        <input type="image" src="https://www.paypalobjects.com/en_US/FR/i/btn/btn_donateCC_LG.gif" border="0"
-                               name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
-                        />
-                        <img alt="" border="0" src="https://www.paypal.com/en_FR/i/scr/pixel.gif" width="1" height="1" />
-                    </form>
-                </p>
+				<form action="https://www.paypal.com/donate" method="post" target="_top">
+					<input type="hidden" name="hosted_button_id" value="GXWGGPW8QNMLL" />
+					<input type="image" src="https://www.paypalobjects.com/en_US/FR/i/btn/btn_donateCC_LG.gif"
+						   name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
+					/>
+					<img alt="" src="https://www.paypal.com/en_FR/i/scr/pixel.gif" width="1" height="1" />
+				</form>
                 <button class="previous">
                     Previous
                 </button>
@@ -208,23 +210,19 @@
 
             </div>
             <div
-                    id="content-paypal"
-                    style="display: none;"
+				id="content-paypal"
+				style="display: none;"
             >
-                <p>
-                    <form action="https://www.paypal.com/donate" method="post" target="_top">
-                        <input type="hidden" name="hosted_button_id" value="MBP798XKMCCP4" />
-                        <input
-                               type="image"
-                               src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif"
-                               name="submit" title="PayPal - The safer, easier way to pay online!"
-                               alt="Donate with PayPal button"
-                        />
-                        <img alt="" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
-                    </form>
-                </p>
-
-
+				<form action="https://www.paypal.com/donate" method="post" target="_top">
+					<input type="hidden" name="hosted_button_id" value="MBP798XKMCCP4" />
+					<input
+						   type="image"
+						   src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif"
+						   name="submit" title="PayPal - The safer, easier way to pay online!"
+						   alt="Donate with PayPal button"
+					/>
+					<img alt="" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
+				</form>
             </div>
             <div
                 id="giftaid-eligible"
@@ -242,28 +240,28 @@
 			>
 				<p>Thank you for your donation to FREEUKGenealogy!</p>
 			</div>
-            <span
+            <div
                     id="content-bank-transfer"
                     style="display: none;"
             >
-                <span
+                <div
                     id="giftaid-option-transfer"
                     style="padding: 5px;"
                 >
-                    <span>
+                    <div>
                         <input type="radio" id="with-giftaid-transfer" name="ga-selector" value="giftaid">
                         <label for="with-giftaid-transfer">Pay with Giftaid</label>
-                    </span>
+                    </div>
 
-                    <span>
+                    <div>
                         <input type="radio" id="without-giftaid-transfer" name="ga-selector" value="without">
                         <label for="without-giftaid-transfer">Pay without Giftaid</label>
-                    </span>
-                    <span>
+                    </div>
+                    <div style="padding: 5px;">
                         <button class="next-giftaid">Next</button>
-                    </span>
-                </span>
-                <span
+                    </div>
+                </div>
+                <div
                     id="giftaid-form-transfer"
                     style="display: none;"
                 >
@@ -272,15 +270,12 @@
                             src="https://docs.google.com/forms/d/e/1FAIpQLSdNF3GT1vXZjwNocEDbiWUpvtsVAhxzWNbbDLQ9LreH5DiA1g/viewform?embedded=true"
                             width="640"
                             height="500"
-                            frameborder="0"
-                            marginheight="0"
-                            marginwidth="0"
                     >Loading…</iframe>
-                </span>
+                </div>
                 <h2>
                     Bank Transfer (UK only)
                 </h2>
-                    <span>
+                    <div>
                         <p>
                     		Funds can be transferred directly to Free UK Genealogy's bank account using internet banking.
                 		</p>
@@ -294,14 +289,14 @@
 								<li>Account Name: Free UK Genealogy</li>
 							</ul>
 						</div>
-                    </span>
+                    </div>
 
-            </span>
-            <span
+            </div>
+            <div
                     id="content-cheque"
                     style="display: none;"
             >
-                <span
+                <div
                     id="giftaid-option-cheque"
                     style="padding: 5px;"
                 >
@@ -314,11 +309,11 @@
                         <input type="radio" id="without-giftaid-cheque" name="ga-selector" value="without">
                         <label for="without-giftaid-cheque">Pay without Giftaid</label>
                     </div>
-                    <div>
+                    <div style="padding: 5px;">
                         <button class="next-giftaid">Next</button>
                     </div>
-                </span>
-                <span
+                </div>
+                <div
                     id="giftaid-form-cheque"
                     style="display: none;"
                 >
@@ -326,13 +321,10 @@
                             src="https://docs.google.com/forms/d/e/1FAIpQLSdNF3GT1vXZjwNocEDbiWUpvtsVAhxzWNbbDLQ9LreH5DiA1g/viewform?embedded=true"
                             width="640"
                             height="600"
-                            frameborder="0"
-                            marginheight="0"
-                            marginwidth="0"
                     >Loading…</iframe>
-                </span>
+                </div>
 
-                    <span>
+                    <div>
 						<h2>
                     		Cheque
                 		</h2>
@@ -348,12 +340,12 @@
                             <li>United Kingdom</li>
                         </ul>
                     </div>
-                    </span>
+                    </div>
 
                 <div class="image-holder">
 
                 </div>
-            </span>
+            </div>
         </div>
         <script src="./donation.js"></script>
     </div>

@@ -76,7 +76,7 @@ var previousEventHandler = function() {
         var currencyTitle = document.getElementById('title-currency');
         currencyTitle.style.display = 'block';
         for(var i = 0; i<previousCollection.length; i++) {
-            previousCollection[i].style.width = "50%";
+            previousCollection[i].style.width = "40%";
         }
     }
 };

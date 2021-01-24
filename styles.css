@@ -11,6 +11,10 @@
     display: inline-block;
 }
 
+#title-payment {
+    height: 35px;
+}
+
 #content-bank-transfer .transfer-list {
     text-align: left;
     margin-left: 40%;
@@ -21,17 +25,9 @@
     margin-left: 35%;
 }
 
-.payment-holder h6 {
+.payment-holder h6, p, h3, h2, label {
     font-family: Source Sans Pro, sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #444444;
 }
 
  /*Primary Button Rounded*/
@@ -50,12 +46,17 @@
     border-radius: 20px;
     white-space: nowrap;
     box-sizing: border-box;
-    width: 50%;
+    width: 40%;
     color: #fff;
     /* Teal */
     background: #00857E;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
     outline: none;
+}
+
+.payment-holder #title-payment {
+    max-height: 40px;
+    min-height: 40px;
 }
 
 .payment-holder button:hover {

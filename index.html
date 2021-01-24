@@ -2,1101 +2,351 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <title>experimental-somethings</title>
+    <link rel="stylesheet" href="donation-styles.css">
+</head>
+<body>
+    <div class="payment-holder">
+        <div id="title-payment">
+            <div id="title-currency">
+                <p>Select Currency</p>
+            </div>
+            <div id="title-kindlink"
+                 style="display: none;"
+            >
+                <img src="https://www.kindlink.com/img/kindlink-logo.svg" alt="Kindlink"/>
+            </div>
+            <div id="title-paypal"
+                 style="display: none;"
+            >
+                <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_100x26.png" alt="PayPal"/>
+        	</div>
+            <div id="title-bank-transfer"
+                 style="display: none;"
+            >
+                <h3>Bank Transfer</h3>
+            </div>
+            <div id="title-cheque"
+                 style="display: none;">
+                <h3>Cheque</h3>
+            </div>
+        </div>
 
-    <!-- Google Analytics user opt-out added via Site Kit by Google -->
-    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-MTGM4S7177&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PJP93GW"></script><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- This site is optimized with the Yoast SEO plugin v15.6.2 - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>Taz Tests Donation Idea — FreeUKGenealogy</title>
-    <!-- Admin only notice: this page does not show a meta description because it does not have one, either write it for this page specifically or go into the [SEO - Search Appearance] menu and set up a template. -->
-    <meta name="robots" content="noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Taz Tests Donation Idea — FreeUKGenealogy">
-    <meta property="og:description" content="Support Us £10 a month Gets 10,000 records into our databases each year &nbsp; £30 a day Keeps our servers running £60 a week Supports our volunteers &nbsp; “Quotes to be in Museo” Denise Engagement Coordinator Non cash ways to support us! Be a Part of Our Social Media Community Join Us! Raise Donations while […]">
-    <meta property="og:url" content="https://wp1.freeukgen.org.uk/taz-tests-donation-idea">
-    <meta property="og:site_name" content="FreeUKGenealogy">
-    <meta property="article:modified_time" content="2021-01-20T21:56:57+00:00">
-    <meta property="og:image" content="https://wp1.freeukgen.org.uk/wp-content/plugins/elementor/assets/images/placeholder.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:label1" content="Est. reading time">
-    <meta name="twitter:data1" content="3 minutes">
-    <script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://wp1.freeukgen.org.uk/#website","url":"https://wp1.freeukgen.org.uk/","name":"FreeUKGenealogy","description":"Free, High-Quality Ancestry Records","potentialAction":[{"@type":"SearchAction","target":"https://wp1.freeukgen.org.uk/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://wp1.freeukgen.org.uk/taz-tests-donation-idea#primaryimage","inLanguage":"en-US","url":"https://wp1.freeukgen.org.uk/wp-content/plugins/elementor/assets/images/placeholder.png"},{"@type":"WebPage","@id":"https://wp1.freeukgen.org.uk/taz-tests-donation-idea#webpage","url":"https://wp1.freeukgen.org.uk/taz-tests-donation-idea","name":"Taz Tests Donation Idea &mdash; FreeUKGenealogy","isPartOf":{"@id":"https://wp1.freeukgen.org.uk/#website"},"primaryImageOfPage":{"@id":"https://wp1.freeukgen.org.uk/taz-tests-donation-idea#primaryimage"},"datePublished":"2021-01-20T21:50:06+00:00","dateModified":"2021-01-20T21:56:57+00:00","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://wp1.freeukgen.org.uk/taz-tests-donation-idea"]}]}]}</script>
-    <!-- / Yoast SEO plugin. -->
+        <div id="content-selector">
+            <div id="currency-selector">
+                <div class="d-inline">
+                    <div>
+                        <input type="radio" id="gb-pounds" name="drone" value="gb-pounds">
+                        <label for="gb-pounds">British pounds sterling</label>
+                    </div>
 
+                    <div>
+                        <input type="radio" id="us-dollars" name="drone" value="us-dollars">
+                        <label for="us-dollars">American Dollars</label>
+                    </div>
 
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//s.w.org">
-    <link rel="alternate" type="application/rss+xml" title="FreeUKGenealogy » Feed" href="https://wp1.freeukgen.org.uk/feed">
-    <link rel="alternate" type="application/rss+xml" title="FreeUKGenealogy » Comments Feed" href="https://wp1.freeukgen.org.uk/comments/feed">
-    <script type="text/javascript">
-        window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/wp1.freeukgen.org.uk\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6"}};
-        !function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
-    </script><script src="https://wp1.freeukgen.org.uk/wp-includes/js/wp-emoji-release.min.js?ver=5.6" type="text/javascript" defer=""></script>
-    <style type="text/css">
-        img.wp-smiley,
-        img.emoji {
-            display: inline !important;
-            border: none !important;
-            box-shadow: none !important;
-            height: 1em !important;
-            width: 1em !important;
-            margin: 0 .07em !important;
-            vertical-align: -0.1em !important;
-            background: none !important;
-            padding: 0 !important;
-        }
-    </style>
-    <link rel="stylesheet" id="dashicons-css" href="https://wp1.freeukgen.org.uk/wp-includes/css/dashicons.min.css?ver=5.6" type="text/css" media="all">
-    <link rel="stylesheet" id="admin-bar-css" href="https://wp1.freeukgen.org.uk/wp-includes/css/admin-bar.min.css?ver=5.6" type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-icons-css" href="https://wp1.freeukgen.org.uk/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.9.1" type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-common-css" href="https://wp1.freeukgen.org.uk/wp-content/plugins/elementor/assets/css/common.min.css?ver=3.0.16" type="text/css" media="all">
-    <link rel="stylesheet" id="wp-block-library-css" href="https://wp1.freeukgen.org.uk/wp-includes/css/dist/block-library/style.min.css?ver=5.6" type="text/css" media="all">
-    <link rel="stylesheet" id="wp-block-library-theme-css" href="https://wp1.freeukgen.org.uk/wp-includes/css/dist/block-library/theme.min.css?ver=5.6" type="text/css" media="all">
-    <link rel="stylesheet" id="ctf_styles-css" href="https://wp1.freeukgen.org.uk/wp-content/plugins/custom-twitter-feeds/css/ctf-styles.min.css?ver=1.7" type="text/css" media="all">
-    <link rel="stylesheet" id="wpforms-full-css" href="https://wp1.freeukgen.org.uk/wp-content/plugins/wpforms-lite/assets/css/wpforms-full.min.css?ver=1.6.4.1" type="text/css" media="all">
-    <link rel="stylesheet" id="252d80f7c-css" href="https://wp1.freeukgen.org.uk/wp-content/uploads/essential-addons-elementor/734e5f942.min.css?ver=1611179821" type="text/css" media="all">
-    <link rel="stylesheet" id="wpforms-admin-bar-css" href="https://wp1.freeukgen.org.uk/wp-content/plugins/wpforms-lite/assets/css/admin-bar.min.css?ver=1.6.4.1" type="text/css" media="all">
-    <link rel="stylesheet" id="font-awesome-css" href="https://wp1.freeukgen.org.uk/wp-content/themes/oceanwp/assets/fonts/fontawesome/css/all.min.css?ver=5.15.1" type="text/css" media="all">
-    <link rel="stylesheet" id="simple-line-icons-css" href="https://wp1.freeukgen.org.uk/wp-content/themes/oceanwp/assets/css/third/simple-line-icons.min.css?ver=2.4.0" type="text/css" media="all">
-    <link rel="stylesheet" id="magnific-popup-css" href="https://wp1.freeukgen.org.uk/wp-content/themes/oceanwp/assets/css/third/magnific-popup.min.css?ver=1.0.0" type="text/css" media="all">
-    <link rel="stylesheet" id="slick-css" href="https://wp1.freeukgen.org.uk/wp-content/themes/oceanwp/assets/css/third/slick.min.css?ver=1.6.0" type="text/css" media="all">
-    <link rel="stylesheet" id="oceanwp-style-css" href="https://wp1.freeukgen.org.uk/wp-content/themes/oceanwp/assets/css/style.min.css?ver=2.0.2" type="text/css" media="all">
-    <link rel="stylesheet" id="oceanwp-google-font-source-sans-pro-css" href="//fonts.googleapis.com/css?family=Source+Sans+Pro%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100i%2C200i%2C300i%2C400i%2C500i%2C600i%2C700i%2C800i%2C900i&amp;subset=latin&amp;display=swap&amp;ver=5.6" type="text/css" media="all">
-    <link rel="stylesheet" id="yoast-seo-adminbar-css" href="https://wp1.freeukgen.org.uk/wp-content/plugins/wordpress-seo/css/dist/adminbar-1562.css" type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-animations-css" href="https://wp1.freeukgen.org.uk/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.0.16" type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-frontend-legacy-css" href="https://wp1.freeukgen.org.uk/wp-content/plugins/elementor/assets/css/frontend-legacy.min.css?ver=3.0.16" type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-frontend-css" href="https://wp1.freeukgen.org.uk/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.0.16" type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-post-1492-css" href="https://wp1.freeukgen.org.uk/wp-content/uploads/elementor/css/post-1492.css?ver=1610554057" type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-post-4897-css" href="https://wp1.freeukgen.org.uk/wp-content/uploads/elementor/css/post-4897.css?ver=1611179736" type="text/css" media="all">
-    <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.6" type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-icons-shared-0-css" href="https://wp1.freeukgen.org.uk/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.12.0" type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-icons-fa-brands-css" href="https://wp1.freeukgen.org.uk/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.12.0" type="text/css" media="all">
-    <script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-includes/js/jquery/jquery.min.js?ver=3.5.1" id="jquery-core-js"></script>
-    <script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
-    <link rel="https://api.w.org/" href="https://wp1.freeukgen.org.uk/wp-json/"><link rel="alternate" type="application/json" href="https://wp1.freeukgen.org.uk/wp-json/wp/v2/pages/4897"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://wp1.freeukgen.org.uk/xmlrpc.php?rsd">
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://wp1.freeukgen.org.uk/wp-includes/wlwmanifest.xml">
-    <meta name="generator" content="WordPress 5.6">
-    <link rel="shortlink" href="https://wp1.freeukgen.org.uk/?p=4897">
-    <link rel="alternate" type="application/json+oembed" href="https://wp1.freeukgen.org.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwp1.freeukgen.org.uk%2Ftaz-tests-donation-idea">
-    <link rel="alternate" type="text/xml+oembed" href="https://wp1.freeukgen.org.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwp1.freeukgen.org.uk%2Ftaz-tests-donation-idea&amp;format=xml">
-    <meta name="generator" content="Site Kit by Google 1.23.0">
-    <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:1036679,hjsv:5};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
-    </script><script async="" src="//static.hotjar.com/c/hotjar-1036679.js?sv=5"></script>
-    <script>
-        ( function() {
-            function wpforms_js_error_loading() {
+                    <div>
+                        <input type="radio" id="c-dollars" name="drone" value="c-dollars">
+                        <label for="c-dollars">Canadian Dollars</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="au-dollars" name="drone" value="au-dollars">
+                        <label for="au-dollars">Australian Dollars</label>
+                    </div>
 
-                if ( typeof window.wpforms !== 'undefined' ) {
-                    return;
-                }
+                    <div>
+                        <input type="radio" id="nz-dollars" name="drone" value="nz-dollars">
+                        <label for="nz-dollars">New Zealand Dollars</label>
+                    </div>
 
-                var forms = document.querySelectorAll( '.wpforms-form' );
-
-                if ( ! forms.length ) {
-                    return;
-                }
-
-                var error = document.createElement( 'div' );
-
-                error.classList.add( 'wpforms-error-container' );
-                error.innerHTML = 'Heads up! WPForms has detected an issue with JavaScript on this page. JavaScript is required for this form to work properly, so this form may not work as expected. See our <a href="https://wpforms.com/docs/getting-support-wpforms/" target="_blank" rel="noopener noreferrer">troubleshooting guide</a> to learn more or contact support.<p>This message is only displayed to site administrators.</p>';
-
-                forms.forEach( function( form ) {
-
-                    if ( ! form.querySelector( '.wpforms-error-container' ) ) {
-                        form.insertBefore( error.cloneNode( true ), form.firstChild );
-                    }
-                } );
-            };
-
-            if ( document.readyState === 'loading' ) {
-                document.addEventListener( 'DOMContentLoaded', wpforms_js_error_loading );
-            } else {
-                wpforms_js_error_loading();
-            }
-        }() );
-    </script><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><style type="text/css" media="print">#wpadminbar { display:none; }</style>
-    <style type="text/css" media="screen">
-        html { margin-top: 32px !important; }
-        * html body { margin-top: 32px !important; }
-        @media screen and ( max-width: 782px ) {
-            html { margin-top: 46px !important; }
-            * html body { margin-top: 46px !important; }
-        }
-    </style>
-    <!-- Google Tag Manager added by Site Kit -->
-    <script>
-        ( function( w, d, s, l, i ) {
-            w[l] = w[l] || [];
-            w[l].push( {'gtm.start': new Date().getTime(), event: 'gtm.js'} );
-            var f = d.getElementsByTagName( s )[0],
-                j = d.createElement( s ), dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore( j, f );
-        } )( window, document, 'script', 'dataLayer', 'GTM-PJP93GW' );
-    </script>
-    <!-- End Google Tag Manager -->
-    <link rel="icon" href="https://wp1.freeukgen.org.uk/wp-content/uploads/2020/12/cropped-Icon-512x512-1-32x32.png" sizes="32x32">
-    <link rel="icon" href="https://wp1.freeukgen.org.uk/wp-content/uploads/2020/12/cropped-Icon-512x512-1-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" href="https://wp1.freeukgen.org.uk/wp-content/uploads/2020/12/cropped-Icon-512x512-1-180x180.png">
-    <meta name="msapplication-TileImage" content="https://wp1.freeukgen.org.uk/wp-content/uploads/2020/12/cropped-Icon-512x512-1-270x270.png">
-    <style type="text/css" id="wp-custom-css">
-        /* #site-header{position:fixed}*/.donate-button{background:#00857e}#site-navigation-wrap .dropdown-menu >li.donate-button >a,#site-navigation-wrap .dropdown-menu >li.donate-button >a:hover{color:#fff}		</style>
-    <!-- OceanWP CSS -->
-    <style type="text/css">
-        /* General CSS */body .theme-button,body input[type="submit"],body button[type="submit"],body button,body .button,body div.wpforms-container-full .wpforms-form input[type=submit],body div.wpforms-container-full .wpforms-form button[type=submit],body div.wpforms-container-full .wpforms-form .wpforms-page-button{background-color:#444444}body .theme-button:hover,body input[type="submit"]:hover,body button[type="submit"]:hover,body button:hover,body .button:hover,body div.wpforms-container-full .wpforms-form input[type=submit]:hover,body div.wpforms-container-full .wpforms-form input[type=submit]:active,body div.wpforms-container-full .wpforms-form button[type=submit]:hover,body div.wpforms-container-full .wpforms-form button[type=submit]:active,body div.wpforms-container-full .wpforms-form .wpforms-page-button:hover,body div.wpforms-container-full .wpforms-form .wpforms-page-button:active{background-color:#333333}/* Top Bar CSS */#top-bar-content a:hover,#top-bar-social-alt a:hover{color:#00875e}/* Header CSS */#site-logo #site-logo-inner,.oceanwp-social-menu .social-menu-inner,#site-header.full_screen-header .menu-bar-inner,.after-header-content .after-header-content-inner{height:90px}#site-navigation-wrap .dropdown-menu >li >a,.oceanwp-mobile-menu-icon a,.mobile-menu-close,.after-header-content-inner >a{line-height:90px}#site-header.has-header-media .overlay-header-media{background-color:rgba(0,0,0,0.5)}#site-header #site-logo #site-logo-inner a img,#site-header.center-header #site-navigation-wrap .middle-site-logo a img{max-height:59px}#site-logo a.site-logo-text:hover{color:#00875e}#site-logo.has-responsive-logo .responsive-logo-link img{max-height:25px}.effect-one #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after,.effect-three #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after,.effect-five #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:before,.effect-five #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after,.effect-nine #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:before,.effect-nine #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after{background-color:#00857e}.effect-four #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:before,.effect-four #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after,.effect-seven #site-navigation-wrap .dropdown-menu >li >a.menu-link:hover >span:after,.effect-seven #site-navigation-wrap .dropdown-menu >li.sfHover >a.menu-link >span:after{color:#00857e}.effect-seven #site-navigation-wrap .dropdown-menu >li >a.menu-link:hover >span:after,.effect-seven #site-navigation-wrap .dropdown-menu >li.sfHover >a.menu-link >span:after{text-shadow:10px 0 #00857e,-10px 0 #00857e}.effect-two #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after,.effect-eight #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:before,.effect-eight #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after{background-color:rgba(89,89,89,0.39)}.effect-six #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:before,.effect-six #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after{border-color:rgba(89,89,89,0.39)}.effect-ten #site-navigation-wrap .dropdown-menu >li >a.menu-link:hover >span,.effect-ten #site-navigation-wrap .dropdown-menu >li.sfHover >a.menu-link >span{-webkit-box-shadow:0 0 10px 4px rgba(89,89,89,0.39);-moz-box-shadow:0 0 10px 4px rgba(89,89,89,0.39);box-shadow:0 0 10px 4px rgba(89,89,89,0.39)}#site-navigation-wrap .dropdown-menu >li >a{padding:0 18px}#site-navigation-wrap .dropdown-menu >li >a,.oceanwp-mobile-menu-icon a,#searchform-header-replace-close{color:#333333}#site-navigation-wrap .dropdown-menu >li >a:hover,.oceanwp-mobile-menu-icon a:hover,#searchform-header-replace-close:hover{color:#00857e}#site-navigation-wrap .dropdown-menu >.current-menu-item >a,#site-navigation-wrap .dropdown-menu >.current-menu-ancestor >a,#site-navigation-wrap .dropdown-menu >.current-menu-item >a:hover,#site-navigation-wrap .dropdown-menu >.current-menu-ancestor >a:hover{color:#00857e}.dropdown-menu .sub-menu,#searchform-dropdown,.current-shop-items-dropdown{border-color:#00857e}.dropdown-menu ul li a.menu-link:hover{color:#f4f4f4}.dropdown-menu ul li a.menu-link:hover{background-color:#00857e}#mobile-dropdown{max-height:353px}body .sidr a:hover,body .sidr-class-dropdown-toggle:hover,body .sidr-class-dropdown-toggle .fa,body .sidr-class-menu-item-has-children.active >a,body .sidr-class-menu-item-has-children.active >a >.sidr-class-dropdown-toggle,#mobile-dropdown ul li a:hover,#mobile-dropdown ul li a .dropdown-toggle:hover,#mobile-dropdown .menu-item-has-children.active >a,#mobile-dropdown .menu-item-has-children.active >a >.dropdown-toggle,#mobile-fullscreen ul li a:hover,#mobile-fullscreen .oceanwp-social-menu.simple-social ul li a:hover{color:#00857e}#mobile-fullscreen a.close:hover .close-icon-inner,#mobile-fullscreen a.close:hover .close-icon-inner::after{background-color:#00857e}body .sidr-class-mobile-searchform input,#mobile-dropdown #mobile-menu-search form input,#mobile-fullscreen #mobile-search input{border-color:#00857e}/* Footer Widgets CSS */#footer-widgets{background-color:#f4f4f4}/* Footer Bottom CSS */#footer-bottom{background-color:#333333}#footer-bottom,#footer-bottom p{color:#f4f4f4}#footer-bottom a,#footer-bottom #footer-bottom-menu a{color:#f4f4f4}#footer-bottom a:hover,#footer-bottom #footer-bottom-menu a:hover{color:#a6e3e1}/* Typography CSS */body{font-family:Source Sans Pro;font-weight:400;font-size:18px;color:#444444}#site-navigation-wrap .dropdown-menu >li >a,#site-header.full_screen-header .fs-dropdown-menu >li >a,#site-header.top-header #site-navigation-wrap .dropdown-menu >li >a,#site-header.center-header #site-navigation-wrap .dropdown-menu >li >a,#site-header.medium-header #site-navigation-wrap .dropdown-menu >li >a,.oceanwp-mobile-menu-icon a{font-family:Source Sans Pro;font-weight:400;font-style:normal;font-size:18px}@media (max-width:480px){#site-navigation-wrap .dropdown-menu >li >a,#site-header.full_screen-header .fs-dropdown-menu >li >a,#site-header.top-header #site-navigation-wrap .dropdown-menu >li >a,#site-header.center-header #site-navigation-wrap .dropdown-menu >li >a,#site-header.medium-header #site-navigation-wrap .dropdown-menu >li >a,.oceanwp-mobile-menu-icon a{font-size:10px}}.dropdown-menu ul li a.menu-link,#site-header.full_screen-header .fs-dropdown-menu ul.sub-menu li a{font-family:Source Sans Pro;font-weight:400;font-size:18px;letter-spacing:.9px}.sidr-class-dropdown-menu li a,a.sidr-class-toggle-sidr-close,#mobile-dropdown ul li a,body #mobile-fullscreen ul li a{font-family:Source Sans Pro;text-transform:capitalize}@media (max-width:768px){.sidr-class-dropdown-menu li a,a.sidr-class-toggle-sidr-close,#mobile-dropdown ul li a,body #mobile-fullscreen ul li a{font-size:16px}}#footer-widgets .footer-box .widget-title{font-family:Arial,Helvetica,sans-serif}#footer-bottom #copyright{font-family:Source Sans Pro;font-size:14px}#footer-bottom #footer-bottom-menu{font-family:Source Sans Pro;font-size:14px}
-    </style><script async="" src="https://script.hotjar.com/modules.8f0a83f5adcff99b4358.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style><style data-emotion=""></style><style type="text/css"></style><style data-emotion="">.css-1l99lqu{border-radius:0;display:block;height:2px;width:25px;position:absolute;right:6px;top:6px;}</style><style data-emotion="">.__typeform-embed-mobile-modal-open{overflow:hidden !important;position:fixed !important;top:0 !important;left:0 !important;right:0 !important;bottom:0 !important;}</style><style data-emotion="">@-webkit-keyframes animation-1x8af4x{10%{opacity:1;}25%{top:0;left:0;width:100%;height:100%;opacity:1;}70%{top:0;left:0;width:100%;height:100%;opacity:1;}100%{top:0;left:0;width:100%;height:100%;opacity:0;}}</style><style data-emotion="">@keyframes animation-1x8af4x{10%{opacity:1;}25%{top:0;left:0;width:100%;height:100%;opacity:1;}70%{top:0;left:0;width:100%;height:100%;opacity:1;}100%{top:0;left:0;width:100%;height:100%;opacity:0;}}</style><style data-emotion="">@-webkit-keyframes animation-1epwmca{100%{opacity:0;}75%{opacity:1;}25%{opacity:1;}0%{opacity:0;}}</style><style data-emotion="">@keyframes animation-1epwmca{100%{opacity:0;}75%{opacity:1;}25%{opacity:1;}0%{opacity:0;}}</style><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
-<body class="page-template page-template-elementor_header_footer page page-id-4897 logged-in admin-bar wp-custom-logo wp-embed-responsive oceanwp-theme dropdown-mobile default-breakpoint content-full-width content-max-width page-header-disabled has-breadcrumbs has-fixed-footer elementor-default elementor-template-full-width elementor-kit-1492 elementor-page elementor-page-4897 customize-support" itemscope="itemscope" itemtype="https://schema.org/WebPage" data-elementor-device-mode="desktop">
-
-<!-- Google Tag Manager (noscript) added by Site Kit -->
-<noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJP93GW" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
-<script type="text/javascript">
-    (function() {
-        var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
-
-        request = true;
-
-        b[c] = b[c].replace( rcs, ' ' );
-        // The customizer requires postMessage and CORS (if the site is cross domain).
-        b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
-    }());
-</script>
-<div id="wpadminbar" class="nojq">
-    <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar">
-        <ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://wp1.freeukgen.org.uk/wp-admin/about.php"><span class="ab-icon"></span><span class="screen-reader-text">About WordPress</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu"><li id="wp-admin-bar-about"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/about.php">About WordPress</a></li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu"><li id="wp-admin-bar-wporg"><a class="ab-item" href="https://wordpress.org/">WordPress.org</a></li><li id="wp-admin-bar-documentation"><a class="ab-item" href="https://codex.wordpress.org/">Documentation</a></li><li id="wp-admin-bar-support-forums"><a class="ab-item" href="https://wordpress.org/support/">Support</a></li><li id="wp-admin-bar-feedback"><a class="ab-item" href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a></li></ul></div></li><li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://wp1.freeukgen.org.uk/wp-admin/">FreeUKGenealogy</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu"><li id="wp-admin-bar-dashboard"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/">Dashboard</a></li></ul><ul id="wp-admin-bar-appearance" class="ab-submenu"><li id="wp-admin-bar-themes"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/themes.php">Themes</a></li><li id="wp-admin-bar-widgets"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/widgets.php">Widgets</a></li><li id="wp-admin-bar-menus"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/nav-menus.php">Menus</a></li><li id="wp-admin-bar-header" class="hide-if-customize"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/themes.php?page=custom-header">Header</a></li></ul></div></li><li id="wp-admin-bar-customize" class="hide-if-no-customize"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/customize.php?url=https%3A%2F%2Fwp1.freeukgen.org.uk%2Ftaz-tests-donation-idea">Customize</a></li><li id="wp-admin-bar-updates"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/update-core.php" title="3 Plugin Updates"><span class="ab-icon"></span><span class="ab-label">3</span><span class="screen-reader-text">3 Plugin Updates</span></a></li><li id="wp-admin-bar-comments"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/edit-comments.php"><span class="ab-icon"></span><span class="ab-label awaiting-mod pending-count count-0" aria-hidden="true">0</span><span class="screen-reader-text comments-in-moderation-text">0 Comments in moderation</span></a></li><li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://wp1.freeukgen.org.uk/wp-admin/post-new.php"><span class="ab-icon"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu"><li id="wp-admin-bar-new-post"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/post-new.php">Post</a></li><li id="wp-admin-bar-new-media"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/media-new.php">Media</a></li><li id="wp-admin-bar-new-page"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/post-new.php?post_type=page">Page</a></li><li id="wp-admin-bar-new-elementor_library"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/post-new.php?post_type=elementor_library">Template</a></li><li id="wp-admin-bar-new-user"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/user-new.php">User</a></li><li id="wp-admin-bar-wpforms"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/admin.php?page=wpforms-builder">WPForms</a></li></ul></div></li><li id="wp-admin-bar-edit"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/post.php?post=4897&amp;action=edit">Edit Page</a></li><li id="wp-admin-bar-elementor_edit_page" class="menupop"><a aria-haspopup="true" class="ab-item  " href="https://wp1.freeukgen.org.uk/wp-admin/post.php?post=4897&amp;action=elementor"><span class="elementor-edit-link-title">Edit with Elementor</span></a><div class="ab-sub-wrapper"><ul class="ab-submenu" id="wp-admin-bar-elementor_edit_page-default"><li id="wp-admin-bar-elementor_app_site_editor" class=""><a class="ab-item  elementor-app-link" href="https://wp1.freeukgen.org.uk/wp-admin/admin.php?page=elementor-app&amp;ver=3.0.16#site-editor/promotion"><span class="elementor-edit-link-title">Open Theme Builder</span></a></li></ul></div></li><li id="wp-admin-bar-wpseo-menu" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://wp1.freeukgen.org.uk/wp-admin/admin.php?page=wpseo_dashboard"><div id="yoast-ab-icon" class="ab-item yoast-logo svg"><span class="screen-reader-text">SEO</span></div><div class="wpseo-score-icon adminbar-seo-score na"><span class="adminbar-seo-score-text screen-reader-text">SEO score: Not available</span></div></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wpseo-menu-default" class="ab-submenu"><li id="wp-admin-bar-wpseo-configuration-wizard"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/admin.php?page=wpseo_configurator">Configuration Wizard</a></li><li id="wp-admin-bar-wpseo-kwresearch" class="menupop"><div class="ab-item ab-empty-item" tabindex="0" aria-haspopup="true"><span class="wp-admin-bar-arrow" aria-hidden="true"></span>Keyword Research</div><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wpseo-kwresearch-default" class="ab-submenu"><li id="wp-admin-bar-wpseo-kwresearchtraining"><a class="ab-item" href="https://yoa.st/wp-admin-bar?php_version=7.2&amp;platform=wordpress&amp;platform_version=5.6&amp;software=free&amp;software_version=15.6.2&amp;days_active=30plus&amp;user_language=en_US" target="_blank">Keyword research training</a></li><li id="wp-admin-bar-wpseo-adwordsexternal"><a class="ab-item" href="https://yoa.st/keywordplanner" target="_blank">Google Ads</a></li><li id="wp-admin-bar-wpseo-googleinsights"><a class="ab-item" href="https://yoa.st/google-trends" target="_blank">Google Trends</a></li></ul></div></li><li id="wp-admin-bar-wpseo-settings" class="menupop"><div class="ab-item ab-empty-item" tabindex="0" aria-haspopup="true"><span class="wp-admin-bar-arrow" aria-hidden="true"></span>SEO Settings</div><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wpseo-settings-default" class="ab-submenu"><li id="wp-admin-bar-wpseo-general"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/admin.php?page=wpseo_dashboard">General</a></li><li id="wp-admin-bar-wpseo-titles"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/admin.php?page=wpseo_titles">Search Appearance</a></li><li id="wp-admin-bar-wpseo-social"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/admin.php?page=wpseo_social">Social</a></li><li id="wp-admin-bar-wpseo-tools"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/admin.php?page=wpseo_tools">Tools</a></li><li id="wp-admin-bar-wpseo-licenses"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/admin.php?page=wpseo_licenses">Premium</a></li></ul></div></li></ul></div></li><li id="wp-admin-bar-elementor_inspector" class="menupop"><div class="ab-item ab-empty-item" aria-haspopup="true">Elementor Debugger</div><div class="ab-sub-wrapper"><ul id="wp-admin-bar-elementor_inspector-default" class="ab-submenu"><li id="wp-admin-bar-elementor_inspector_pagetemplate" class="menupop"><div class="ab-item ab-empty-item" aria-haspopup="true"><span class="wp-admin-bar-arrow" aria-hidden="true"></span>Page Template</div><div class="ab-sub-wrapper"><ul id="wp-admin-bar-elementor_inspector_pagetemplate-default" class="ab-submenu"><li id="wp-admin-bar-elementor_inspector_log_pagetemplate_0"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/post.php?post=4897&amp;action=elementor" target="_blank">Elementor - header-footer.php</a></li></ul></div></li></ul></div></li><li id="wp-admin-bar-wpforms-menu" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://wp1.freeukgen.org.uk/wp-admin/admin.php?page=wpforms-overview">WPForms</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wpforms-menu-default" class="ab-submenu"><li id="wp-admin-bar-wpforms-forms"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/admin.php?page=wpforms-overview">All Forms</a></li><li id="wp-admin-bar-wpforms-add-new"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/admin.php?page=wpforms-builder">Add New</a></li><li id="wp-admin-bar-wpforms-community"><a class="ab-item" href="https://www.facebook.com/groups/wpformsvip/" target="_blank" rel="noopener noreferrer">Community</a></li><li id="wp-admin-bar-wpforms-support"><a class="ab-item" href="https://wpforms.com/docs/" target="_blank" rel="noopener noreferrer">Support</a></li></ul></div></li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu"><li id="wp-admin-bar-search" class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="https://wp1.freeukgen.org.uk/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150"><label for="adminbar-search" class="screen-reader-text">Search</label><input type="submit" class="adminbar-button" value="Search"></form></div></li><li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item" aria-haspopup="true" href="https://wp1.freeukgen.org.uk/wp-admin/profile.php">Howdy, <span class="display-name">Taz</span><img alt="" src="https://secure.gravatar.com/avatar/8ba27242a0e86a8f9cd1884f33e9e46e?s=26&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/8ba27242a0e86a8f9cd1884f33e9e46e?s=52&amp;d=mm&amp;r=g 2x" class="avatar avatar-26 photo" height="26" width="26" loading="lazy"></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class="ab-submenu"><li id="wp-admin-bar-user-info"><a class="ab-item" tabindex="-1" href="https://wp1.freeukgen.org.uk/wp-admin/profile.php"><img alt="" src="https://secure.gravatar.com/avatar/8ba27242a0e86a8f9cd1884f33e9e46e?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/8ba27242a0e86a8f9cd1884f33e9e46e?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy"><span class="display-name">Taz</span></a></li><li id="wp-admin-bar-edit-profile"><a class="ab-item" href="https://wp1.freeukgen.org.uk/wp-admin/profile.php">Edit Profile</a></li><li id="wp-admin-bar-logout"><a class="ab-item" href="https://wp1.freeukgen.org.uk/x1y2z3?action=logout&amp;_wpnonce=6d91828bfd">Log Out</a></li></ul></div></li></ul>			</div>
-    <a class="screen-reader-shortcut" href="https://wp1.freeukgen.org.uk/x1y2z3?action=logout&amp;_wpnonce=6d91828bfd">Log Out</a>
-</div>
-
-
-
-<div id="outer-wrap" class="site clr">
-
-    <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
-
-
-    <div id="wrap" class="clr">
-
-
-
-        <header id="site-header" class="minimal-header effect-three clr" data-height="90" itemscope="itemscope" itemtype="https://schema.org/WPHeader" role="banner">
-
-
-
-            <div id="site-header-inner" class="clr container">
-
-
-
-
-                <div id="site-logo" class="clr has-responsive-logo" itemscope="" itemtype="https://schema.org/Brand">
-
-
-                    <div id="site-logo-inner" class="clr">
-
-                        <a href="https://wp1.freeukgen.org.uk/" class="custom-logo-link" rel="home"><img width="1922" height="363" src="https://wp1.freeukgen.org.uk/wp-content/uploads/2020/10/RGB__FreeUKG_Master.png" class="custom-logo" alt="Master image for FreeUKG" srcset="https://wp1.freeukgen.org.uk/wp-content/uploads/2020/10/RGB__FreeUKG_Master.png 1922w, https://wp1.freeukgen.org.uk/wp-content/uploads/2020/10/RGB__FreeUKG_Master-300x57.png 300w, https://wp1.freeukgen.org.uk/wp-content/uploads/2020/10/RGB__FreeUKG_Master-768x145.png 768w, https://wp1.freeukgen.org.uk/wp-content/uploads/2020/10/RGB__FreeUKG_Master-1024x193.png 1024w" sizes="(max-width: 1922px) 100vw, 1922px"></a><a href="https://wp1.freeukgen.org.uk/" class="responsive-logo-link" rel="home"><img src="https://wp1.freeukgen.org.uk/wp-content/uploads/2020/10/RGB__FreeUKG_Master.png" class="responsive-logo" width="1922" height="363" alt="Master image for FreeUKG"></a>
-                    </div><!-- #site-logo-inner -->
-
-
-
-                </div><!-- #site-logo -->
-
-                <div id="site-navigation-wrap" class="clr">
-
-
-
-                    <nav id="site-navigation" class="navigation main-navigation clr" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" role="navigation">
-
-                        <ul id="menu-header-menu" class="main-menu dropdown-menu sf-menu sf-js-enabled" style="touch-action: pan-y;"><li id="menu-item-1511" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1511"><a href="https://wp1.freeukgen.org.uk/" class="menu-link"><span class="text-wrap">Home</span></a></li><li id="menu-item-1559" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1559"><a href="https://wp1.freeukgen.org.uk/our-story" class="menu-link"><span class="text-wrap">Our Story</span></a></li><li id="menu-item-1600" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1600"><a href="https://wp1.freeukgen.org.uk/get-involved" class="menu-link sf-with-ul"><span class="text-wrap">Get Involved</span></a>
-                            <ul class="sub-menu" style="display: none;">
-                                <li id="menu-item-1601" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1601"><a href="https://wp1.freeukgen.org.uk/volunteer" class="menu-link"><span class="text-wrap">Volunteer</span></a></li></ul>
-                        </li><li id="menu-item-4544" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-4544"><a href="https://wp1.freeukgen.org.uk/genealogy-research" class="menu-link sf-with-ul"><span class="text-wrap">Help</span></a>
-                            <ul class="sub-menu" style="display: none;">
-                                <li id="menu-item-1550" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1550"><a href="https://wp1.freeukgen.org.uk/contact-us" class="menu-link"><span class="text-wrap">Contact Us</span></a></li></ul>
-                        </li><li id="menu-item-1561" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1561"><a href="https://wp1.freeukgen.org.uk/news" class="menu-link"><span class="text-wrap">News</span></a></li><li id="menu-item-4583" class="donate-button menu-item menu-item-type-post_type menu-item-object-page menu-item-4583"><a href="https://wp1.freeukgen.org.uk/donation" class="menu-link"><span class="text-wrap">Donate</span></a></li></ul>
-                    </nav><!-- #site-navigation -->
-
-
-
-                </div><!-- #site-navigation-wrap -->
-
-
-
-
-                <div class="oceanwp-mobile-menu-icon clr mobile-right">
-
-
-
-
-                    <a href="javascript:void(0)" class="mobile-menu" aria-label="Mobile Menu">
-                        <i class="fa fa-bars" aria-hidden="true"></i>
-                        <span class="oceanwp-text">Menu</span>
-                        <span class="oceanwp-close-text">Close</span>
-                    </a>
-
-
-
-
-                </div><!-- #oceanwp-mobile-menu-navbar -->
-
-
-            </div><!-- #site-header-inner -->
-
-
-            <div id="mobile-dropdown" class="clr">
-
-                <nav class="clr" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
-
-                    <ul id="menu-header-menu-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1511"><a href="https://wp1.freeukgen.org.uk/">Home</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1559"><a href="https://wp1.freeukgen.org.uk/our-story">Our Story</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1600"><a href="https://wp1.freeukgen.org.uk/get-involved">Get Involved<span class="dropdown-toggle"></span></a>
-                            <ul class="sub-menu">
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1601"><a href="https://wp1.freeukgen.org.uk/volunteer">Volunteer</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4544"><a href="https://wp1.freeukgen.org.uk/genealogy-research">Help<span class="dropdown-toggle"></span></a>
-                            <ul class="sub-menu">
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1550"><a href="https://wp1.freeukgen.org.uk/contact-us">Contact Us</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1561"><a href="https://wp1.freeukgen.org.uk/news">News</a></li>
-                        <li class="donate-button menu-item menu-item-type-post_type menu-item-object-page menu-item-4583"><a href="https://wp1.freeukgen.org.uk/donation">Donate</a></li>
-                    </ul>
-                    <div id="mobile-menu-search" class="clr">
-                        <form method="get" action="https://wp1.freeukgen.org.uk/" class="mobile-searchform" role="search" aria-label="Search for:">
-                            <label for="ocean-mobile-search1">
-                                <input type="search" name="s" autocomplete="off" placeholder="Search">
-                                <button type="submit" class="searchform-submit" aria-label="Submit search">
-                                    <i class="icon-magnifier" aria-hidden="true"></i>
-                                </button>
-                            </label>
-                        </form>
-                    </div><!-- .mobile-menu-search -->
-
-                </nav>
+                    <div>
+                        <input type="radio" id="euro" name="drone" value="euro">
+                        <label for="euro">Euro</label>
+                    </div>
+                    <div><button id="next-button" type="submit">Next</button></div>
+                </div>
 
             </div>
+            <div
+                 id="gb-pounds-provider-selector"
+                 style="display: none;"
+            >
+                <div>
+                    <button
+						id="kindlink-button"
+						data-provider="kindlink"
+						style="margin-bottom: 5px;"
+					>
+                        Kindlink
+                    </button>
+                </div>
 
-
-
-
-
-        </header><!-- #site-header -->
-
-
-
-        <main id="main" class="site-main clr" role="main" style="min-height: 829px;">
-
-            <div data-elementor-type="wp-page" data-elementor-id="4897" class="elementor elementor-4897" data-elementor-settings="[]">
-                <div class="elementor-inner">
-                    <div class="elementor-section-wrap">
-                        <section class="elementor-section elementor-top-section elementor-element elementor-element-041d28b elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="041d28b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div class="elementor-row">
-                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-dd2830a" data-id="dd2830a" data-element_type="column">
-                                        <div class="elementor-column-wrap elementor-element-populated">
-                                            <div class="elementor-widget-wrap">
-                                                <div class="elementor-element elementor-element-9e3f028 elementor-widget elementor-widget-heading" data-id="9e3f028" data-element_type="widget" data-widget_type="heading.default">
-                                                    <div class="elementor-widget-container">
-                                                        <h1 class="elementor-heading-title elementor-size-default">Support Us</h1>		</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="elementor-section elementor-top-section elementor-element elementor-element-965e6e0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="965e6e0" data-element_type="section">
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div class="elementor-row">
-                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-777cd65" data-id="777cd65" data-element_type="column">
-                                        <div class="elementor-column-wrap elementor-element-populated">
-                                            <div class="elementor-widget-wrap">
-                                                <div class="elementor-element elementor-element-24c1fb8 elementor-widget elementor-widget-spacer" data-id="24c1fb8" data-element_type="widget" data-widget_type="spacer.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-spacer">
-                                                            <div class="elementor-spacer-inner"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="elementor-section elementor-top-section elementor-element elementor-element-b316c62 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b316c62" data-element_type="section">
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div class="elementor-row">
-                                    <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-18488c5" data-id="18488c5" data-element_type="column">
-                                        <div class="elementor-column-wrap elementor-element-populated">
-                                            <div class="elementor-widget-wrap">
-                                                <div class="elementor-element elementor-element-eb538fc elementor-widget elementor-widget-heading" data-id="eb538fc" data-element_type="widget" data-widget_type="heading.default">
-                                                    <div class="elementor-widget-container">
-                                                        <h1 class="elementor-heading-title elementor-size-default">£10</h1>		</div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-2944124 elementor-widget elementor-widget-heading" data-id="2944124" data-element_type="widget" data-widget_type="heading.default">
-                                                    <div class="elementor-widget-container">
-                                                        <h3 class="elementor-heading-title elementor-size-default">a month</h3>		</div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-c941e46 elementor-widget elementor-widget-text-editor" data-id="c941e46" data-element_type="widget" data-widget_type="text-editor.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-text-editor elementor-clearfix"><p style="text-align: center;">Gets 10,000 records into our databases each year</p><p style="text-align: center;">&nbsp;</p></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-7bbc314" data-id="7bbc314" data-element_type="column">
-                                        <div class="elementor-column-wrap elementor-element-populated">
-                                            <div class="elementor-widget-wrap">
-                                                <div class="elementor-element elementor-element-093d49f elementor-widget elementor-widget-heading" data-id="093d49f" data-element_type="widget" data-widget_type="heading.default">
-                                                    <div class="elementor-widget-container">
-                                                        <h1 class="elementor-heading-title elementor-size-default">£30</h1>		</div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-dddb995 elementor-widget elementor-widget-heading" data-id="dddb995" data-element_type="widget" data-widget_type="heading.default">
-                                                    <div class="elementor-widget-container">
-                                                        <h3 class="elementor-heading-title elementor-size-default">a day</h3>		</div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-a77ad2e elementor-widget elementor-widget-text-editor" data-id="a77ad2e" data-element_type="widget" data-widget_type="text-editor.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-text-editor elementor-clearfix"><p style="text-align: center;">Keeps our servers running</p>
-                                                            <p style="text-align: center;">
-                                                            </p></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-356f4bd" data-id="356f4bd" data-element_type="column">
-                                        <div class="elementor-column-wrap elementor-element-populated">
-                                            <div class="elementor-widget-wrap">
-                                                <div class="elementor-element elementor-element-dffecf2 elementor-widget elementor-widget-heading" data-id="dffecf2" data-element_type="widget" data-widget_type="heading.default">
-                                                    <div class="elementor-widget-container">
-                                                        <h1 class="elementor-heading-title elementor-size-default">£60</h1>		</div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-72079f3 elementor-widget elementor-widget-heading" data-id="72079f3" data-element_type="widget" data-widget_type="heading.default">
-                                                    <div class="elementor-widget-container">
-                                                        <h3 class="elementor-heading-title elementor-size-default">a week</h3>		</div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-dd8fe8e elementor-widget elementor-widget-text-editor" data-id="dd8fe8e" data-element_type="widget" data-widget_type="text-editor.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-text-editor elementor-clearfix"><p style="text-align: center;">Supports our volunteers</p><p style="text-align: center;">&nbsp;</p></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="elementor-section elementor-top-section elementor-element elementor-element-c916e13 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c916e13" data-element_type="section">
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div class="elementor-row">
-                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4191d50" data-id="4191d50" data-element_type="column">
-                                        <div class="elementor-column-wrap elementor-element-populated">
-                                            <div class="elementor-widget-wrap">
-                                                <section class="elementor-section elementor-inner-section elementor-element elementor-element-9911122 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9911122" data-element_type="section">
-                                                    <div class="elementor-container elementor-column-gap-default">
-                                                        <div class="elementor-row">
-                                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c7f1f23" data-id="c7f1f23" data-element_type="column">
-                                                                <div class="elementor-column-wrap elementor-element-populated">
-                                                                    <div class="elementor-widget-wrap">
-                                                                        <div class="elementor-element elementor-element-e96c79d elementor-widget elementor-widget-testimonial" data-id="e96c79d" data-element_type="widget" data-widget_type="testimonial.default">
-                                                                            <div class="elementor-widget-container">
-                                                                                <div class="elementor-testimonial-wrapper elementor-testimonial-text-align-center">
-                                                                                    <div class="elementor-testimonial-content">"Quotes to be in Museo"</div>
-
-                                                                                    <div class="elementor-testimonial-meta elementor-has-image elementor-testimonial-image-position-aside">
-                                                                                        <div class="elementor-testimonial-meta-inner">
-                                                                                            <div class="elementor-testimonial-image">
-                                                                                                <img src="https://wp1.freeukgen.org.uk/wp-content/plugins/elementor/assets/images/placeholder.png" title="" alt="">						</div>
-
-                                                                                            <div class="elementor-testimonial-details">
-                                                                                                <div class="elementor-testimonial-name">Denise </div>
-                                                                                                <div class="elementor-testimonial-job">Engagement Coordinator</div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c13a5d3" data-id="c13a5d3" data-element_type="column">
-                                                                <div class="elementor-column-wrap">
-                                                                    <div class="elementor-widget-wrap">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </section>
-                                                <div class="elementor-element elementor-element-91d4dd2 elementor-widget elementor-widget-spacer" data-id="91d4dd2" data-element_type="widget" data-widget_type="spacer.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-spacer">
-                                                            <div class="elementor-spacer-inner"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="elementor-section elementor-top-section elementor-element elementor-element-92b5b94 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="92b5b94" data-element_type="section">
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div class="elementor-row">
-                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-dadfe51" data-id="dadfe51" data-element_type="column">
-                                        <div class="elementor-column-wrap elementor-element-populated">
-                                            <div class="elementor-widget-wrap">
-                                                <div class="elementor-element elementor-element-45f0d81 elementor-widget elementor-widget-html" data-id="45f0d81" data-element_type="widget" data-widget_type="html.default">
-                                                    <div class="elementor-widget-container">
-                                                        <iframe src="./donation.html" style="height: 600px;"></iframe>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="elementor-section elementor-top-section elementor-element elementor-element-e28055e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e28055e" data-element_type="section">
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div class="elementor-row">
-                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c78a49b" data-id="c78a49b" data-element_type="column">
-                                        <div class="elementor-column-wrap elementor-element-populated">
-                                            <div class="elementor-widget-wrap">
-                                                <div class="elementor-element elementor-element-8dba355 elementor-widget elementor-widget-heading" data-id="8dba355" data-element_type="widget" data-widget_type="heading.default">
-                                                    <div class="elementor-widget-container">
-                                                        <h2 class="elementor-heading-title elementor-size-default">Non cash ways to support us!</h2>		</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="elementor-section elementor-top-section elementor-element elementor-element-1e443d6 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="1e443d6" data-element_type="section">
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div class="elementor-row">
-                                    <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-c90bafc" data-id="c90bafc" data-element_type="column">
-                                        <div class="elementor-column-wrap elementor-element-populated">
-                                            <div class="elementor-widget-wrap">
-                                                <div class="elementor-element elementor-element-dea32d9 elementor-widget elementor-widget-image" data-id="dea32d9" data-element_type="widget" data-widget_type="image.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-image">
-                                                            <img width="131" height="129" src="https://wp1.freeukgen.org.uk/wp-content/uploads/2020/10/raise-awarness-icon.png" class="attachment-large size-large" alt="" loading="lazy">											</div>
-                                                    </div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-ab0d361 elementor-widget elementor-widget-text-editor" data-id="ab0d361" data-element_type="widget" data-widget_type="text-editor.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-text-editor elementor-clearfix"><p style="text-align: center;">Be a Part of Our Social Media Community</p></div>
-                                                    </div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-242b0c0 elementor-widget elementor-widget-text-editor" data-id="242b0c0" data-element_type="widget" data-widget_type="text-editor.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-text-editor elementor-clearfix"><p style="text-align: center;">Join Us!</p></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-39b1696" data-id="39b1696" data-element_type="column">
-                                        <div class="elementor-column-wrap elementor-element-populated">
-                                            <div class="elementor-widget-wrap">
-                                                <div class="elementor-element elementor-element-518a174 elementor-widget elementor-widget-image" data-id="518a174" data-element_type="widget" data-widget_type="image.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-image">
-                                                            <img width="136" height="135" src="https://wp1.freeukgen.org.uk/wp-content/uploads/2020/10/shopping-icon.png" class="attachment-large size-large" alt="" loading="lazy">											</div>
-                                                    </div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-8d60c79 elementor-widget elementor-widget-text-editor" data-id="8d60c79" data-element_type="widget" data-widget_type="text-editor.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-text-editor elementor-clearfix"><p style="text-align: center;">Raise Donations while Shopping Online</p></div>
-                                                    </div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-d81a0c0 elementor-widget elementor-widget-text-editor" data-id="d81a0c0" data-element_type="widget" data-widget_type="text-editor.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-text-editor elementor-clearfix"><p style="text-align: center;">Learn How</p></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-da0e805" data-id="da0e805" data-element_type="column">
-                                        <div class="elementor-column-wrap elementor-element-populated">
-                                            <div class="elementor-widget-wrap">
-                                                <div class="elementor-element elementor-element-e38c487 elementor-widget elementor-widget-image" data-id="e38c487" data-element_type="widget" data-widget_type="image.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-image">
-                                                            <img width="136" height="134" src="https://wp1.freeukgen.org.uk/wp-content/uploads/2020/10/amazon-icon.png" class="attachment-large size-large" alt="" loading="lazy">											</div>
-                                                    </div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-324f7a7 elementor-widget elementor-widget-text-editor" data-id="324f7a7" data-element_type="widget" data-widget_type="text-editor.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-text-editor elementor-clearfix"><p style="text-align: center;">Raise Donations with AmazonSmile</p></div>
-                                                    </div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-5120501 elementor-widget elementor-widget-text-editor" data-id="5120501" data-element_type="widget" data-widget_type="text-editor.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-text-editor elementor-clearfix"><p style="text-align: center;">Go to AmazonSmile</p></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-fc8933d" data-id="fc8933d" data-element_type="column">
-                                        <div class="elementor-column-wrap elementor-element-populated">
-                                            <div class="elementor-widget-wrap">
-                                                <div class="elementor-element elementor-element-6748f89 elementor-widget elementor-widget-image" data-id="6748f89" data-element_type="widget" data-widget_type="image.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-image">
-                                                            <img width="115" height="106" src="https://wp1.freeukgen.org.uk/wp-content/uploads/2020/10/search-icon.png" class="attachment-large size-large" alt="" loading="lazy">											</div>
-                                                    </div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-acc7a26 elementor-widget elementor-widget-text-editor" data-id="acc7a26" data-element_type="widget" data-widget_type="text-editor.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-text-editor elementor-clearfix"><p style="text-align: center;">Raise Donations when you search online</p></div>
-                                                    </div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-730bcb7 elementor-widget elementor-widget-text-editor" data-id="730bcb7" data-element_type="widget" data-widget_type="text-editor.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-text-editor elementor-clearfix"><p style="text-align: center;">Go to AmazonSmile</p></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="elementor-section elementor-top-section elementor-element elementor-element-09e159d elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="09e159d" data-element_type="section">
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div class="elementor-row">
-                                    <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-594228d" data-id="594228d" data-element_type="column">
-                                        <div class="elementor-column-wrap elementor-element-populated">
-                                            <div class="elementor-widget-wrap">
-                                                <div class="elementor-element elementor-element-c12c012 elementor-widget elementor-widget-image" data-id="c12c012" data-element_type="widget" data-widget_type="image.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-image">
-                                                            <img width="101" height="101" src="https://wp1.freeukgen.org.uk/wp-content/uploads/2020/10/volunteer-icon.png" class="attachment-large size-large" alt="" loading="lazy">											</div>
-                                                    </div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-3a8e295 elementor-widget elementor-widget-text-editor" data-id="3a8e295" data-element_type="widget" data-widget_type="text-editor.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-text-editor elementor-clearfix"><p style="text-align: center;">Volunteer Your Time</p></div>
-                                                    </div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-8143cbd elementor-widget elementor-widget-text-editor" data-id="8143cbd" data-element_type="widget" data-widget_type="text-editor.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-text-editor elementor-clearfix"><p style="text-align: center;">See Opportunities</p></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f102609" data-id="f102609" data-element_type="column">
-                                        <div class="elementor-column-wrap elementor-element-populated">
-                                            <div class="elementor-widget-wrap">
-                                                <div class="elementor-element elementor-element-c2cad76 elementor-widget elementor-widget-image" data-id="c2cad76" data-element_type="widget" data-widget_type="image.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-image">
-                                                            <img width="134" height="136" src="https://wp1.freeukgen.org.uk/wp-content/uploads/2020/10/recycle-icon.png" class="attachment-large size-large" alt="" loading="lazy">											</div>
-                                                    </div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-85bc62d elementor-widget elementor-widget-text-editor" data-id="85bc62d" data-element_type="widget" data-widget_type="text-editor.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-text-editor elementor-clearfix"><p style="text-align: center;">Recycle Used Inkjet Cartridges</p></div>
-                                                    </div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-b054143 elementor-widget elementor-widget-text-editor" data-id="b054143" data-element_type="widget" data-widget_type="text-editor.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-text-editor elementor-clearfix"><p style="text-align: center;">Learn How</p></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-4a3e6a7" data-id="4a3e6a7" data-element_type="column">
-                                        <div class="elementor-column-wrap elementor-element-populated">
-                                            <div class="elementor-widget-wrap">
-                                                <div class="elementor-element elementor-element-e72f304 elementor-widget elementor-widget-image" data-id="e72f304" data-element_type="widget" data-widget_type="image.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-image">
-                                                            <img width="136" height="136" src="https://wp1.freeukgen.org.uk/wp-content/uploads/2020/10/workplace-icon.png" class="attachment-large size-large" alt="" loading="lazy">											</div>
-                                                    </div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-b79226b elementor-widget elementor-widget-text-editor" data-id="b79226b" data-element_type="widget" data-widget_type="text-editor.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-text-editor elementor-clearfix"><p style="text-align: center;">Support Via Workplace Giving</p></div>
-                                                    </div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-e4e6c0b elementor-widget elementor-widget-text-editor" data-id="e4e6c0b" data-element_type="widget" data-widget_type="text-editor.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-text-editor elementor-clearfix"><p style="text-align: center;">Apply Today</p></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="elementor-section elementor-top-section elementor-element elementor-element-2e3a496 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2e3a496" data-element_type="section">
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div class="elementor-row">
-                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4807bd5" data-id="4807bd5" data-element_type="column">
-                                        <div class="elementor-column-wrap elementor-element-populated">
-                                            <div class="elementor-widget-wrap">
-                                                <div class="elementor-element elementor-element-604cd45 elementor-widget elementor-widget-spacer" data-id="604cd45" data-element_type="widget" data-widget_type="spacer.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-spacer">
-                                                            <div class="elementor-spacer-inner"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-87d30e1 elementor-widget elementor-widget-heading" data-id="87d30e1" data-element_type="widget" data-widget_type="heading.default">
-                                                    <div class="elementor-widget-container">
-                                                        <h2 class="elementor-heading-title elementor-size-default">Help us keep your history free</h2>		</div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-c55e930 elementor-widget elementor-widget-image" data-id="c55e930" data-element_type="widget" data-widget_type="image.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-image">
-                                                            <img width="150" height="150" src="https://wp1.freeukgen.org.uk/wp-content/uploads/2020/10/Donate-Button-V2-2-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy">											</div>
-                                                    </div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-c307e94 elementor-widget elementor-widget-spacer" data-id="c307e94" data-element_type="widget" data-widget_type="spacer.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-spacer">
-                                                            <div class="elementor-spacer-inner"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="elementor-section elementor-top-section elementor-element elementor-element-6f19ef3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6f19ef3" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div class="elementor-row">
-                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0a7fc8a" data-id="0a7fc8a" data-element_type="column">
-                                        <div class="elementor-column-wrap elementor-element-populated">
-                                            <div class="elementor-widget-wrap">
-                                                <section class="elementor-section elementor-inner-section elementor-element elementor-element-cb19a95 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cb19a95" data-element_type="section">
-                                                    <div class="elementor-container elementor-column-gap-wide">
-                                                        <div class="elementor-row">
-                                                            <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-5e4f613" data-id="5e4f613" data-element_type="column">
-                                                                <div class="elementor-column-wrap elementor-element-populated">
-                                                                    <div class="elementor-widget-wrap">
-                                                                        <div class="elementor-element elementor-element-3c38855 elementor-widget elementor-widget-image" data-id="3c38855" data-element_type="widget" data-widget_type="image.default">
-                                                                            <div class="elementor-widget-container">
-                                                                                <div class="elementor-image">
-                                                                                    <img width="1024" height="193" src="https://wp1.freeukgen.org.uk/wp-content/uploads/2020/10/RGB__FreeUKG_Master-1024x193.png" class="attachment-large size-large" alt="Master image for FreeUKG" loading="lazy" srcset="https://wp1.freeukgen.org.uk/wp-content/uploads/2020/10/RGB__FreeUKG_Master-1024x193.png 1024w, https://wp1.freeukgen.org.uk/wp-content/uploads/2020/10/RGB__FreeUKG_Master-300x57.png 300w, https://wp1.freeukgen.org.uk/wp-content/uploads/2020/10/RGB__FreeUKG_Master-768x145.png 768w, https://wp1.freeukgen.org.uk/wp-content/uploads/2020/10/RGB__FreeUKG_Master.png 1922w" sizes="(max-width: 1024px) 100vw, 1024px">											</div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="elementor-element elementor-element-73b7b42 elementor-widget elementor-widget-text-editor" data-id="73b7b42" data-element_type="widget" data-widget_type="text-editor.default">
-                                                                            <div class="elementor-widget-container">
-                                                                                <div class="elementor-text-editor elementor-clearfix"><p>Free UK Genealogy provides free, online access to family history records. We work with a team of dedicated volunteers to create high-quality transcriptions of public records from governmental sources, parish churches, and other trusted institutions.</p></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="elementor-element elementor-element-64406c5 elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="64406c5" data-element_type="widget" data-widget_type="social-icons.default">
-                                                                            <div class="elementor-widget-container">
-                                                                                <div class="elementor-social-icons-wrapper elementor-grid">
-                                                                                    <div class="elementor-grid-item">
-                                                                                        <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-repeater-item-4dd0497" href="https://www.facebook.com/freeukgen/" target="_blank">
-                                                                                            <span class="elementor-screen-only">Facebook-f</span>
-                                                                                            <i class="fab fa-facebook-f"></i>					</a>
-                                                                                    </div>
-                                                                                    <div class="elementor-grid-item">
-                                                                                        <a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-b31d0e4" target="_blank">
-                                                                                            <span class="elementor-screen-only">Instagram</span>
-                                                                                            <i class="fab fa-instagram"></i>					</a>
-                                                                                    </div>
-                                                                                    <div class="elementor-grid-item">
-                                                                                        <a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-a22fb37" target="_blank">
-                                                                                            <span class="elementor-screen-only">Twitter</span>
-                                                                                            <i class="fab fa-twitter"></i>					</a>
-                                                                                    </div>
-                                                                                    <div class="elementor-grid-item">
-                                                                                        <a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-340df39" target="_blank">
-                                                                                            <span class="elementor-screen-only">Youtube</span>
-                                                                                            <i class="fab fa-youtube"></i>					</a>
-                                                                                    </div>
-                                                                                    <div class="elementor-grid-item">
-                                                                                        <a class="elementor-icon elementor-social-icon elementor-social-icon-github elementor-repeater-item-61b4e94" target="_blank">
-                                                                                            <span class="elementor-screen-only">Github</span>
-                                                                                            <i class="fab fa-github"></i>					</a>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-0626202" data-id="0626202" data-element_type="column">
-                                                                <div class="elementor-column-wrap elementor-element-populated">
-                                                                    <div class="elementor-widget-wrap">
-                                                                        <div class="elementor-element elementor-element-b62e21a elementor-widget elementor-widget-heading" data-id="b62e21a" data-element_type="widget" data-widget_type="heading.default">
-                                                                            <div class="elementor-widget-container">
-                                                                                <h4 class="elementor-heading-title elementor-size-default">Home</h4>		</div>
-                                                                        </div>
-                                                                        <div class="elementor-element elementor-element-84e4da6 elementor-hidden-phone elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="84e4da6" data-element_type="widget" data-widget_type="icon-list.default">
-                                                                            <div class="elementor-widget-container">
-                                                                                <ul class="elementor-icon-list-items">
-                                                                                    <li class="elementor-icon-list-item">
-                                                                                        <span class="elementor-icon-list-text">About Us</span>
-                                                                                    </li>
-                                                                                    <li class="elementor-icon-list-item">
-                                                                                        <span class="elementor-icon-list-text">Projects</span>
-                                                                                    </li>
-                                                                                    <li class="elementor-icon-list-item">
-                                                                                        <span class="elementor-icon-list-text">Events</span>
-                                                                                    </li>
-                                                                                    <li class="elementor-icon-list-item">
-                                                                                        <span class="elementor-icon-list-text">News</span>
-                                                                                    </li>
-                                                                                    <li class="elementor-icon-list-item">
-                                                                                        <span class="elementor-icon-list-text">Get Involved</span>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-e44507a" data-id="e44507a" data-element_type="column">
-                                                                <div class="elementor-column-wrap elementor-element-populated">
-                                                                    <div class="elementor-widget-wrap">
-                                                                        <div class="elementor-element elementor-element-196240f elementor-widget elementor-widget-heading" data-id="196240f" data-element_type="widget" data-widget_type="heading.default">
-                                                                            <div class="elementor-widget-container">
-                                                                                <h4 class="elementor-heading-title elementor-size-default">About Us</h4>		</div>
-                                                                        </div>
-                                                                        <div class="elementor-element elementor-element-47718b7 elementor-hidden-phone elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="47718b7" data-element_type="widget" data-widget_type="icon-list.default">
-                                                                            <div class="elementor-widget-container">
-                                                                                <ul class="elementor-icon-list-items">
-                                                                                    <li class="elementor-icon-list-item">
-                                                                                        <span class="elementor-icon-list-text">Our Story</span>
-                                                                                    </li>
-                                                                                    <li class="elementor-icon-list-item">
-                                                                                        <span class="elementor-icon-list-text">Our Impact</span>
-                                                                                    </li>
-                                                                                    <li class="elementor-icon-list-item">
-                                                                                        <span class="elementor-icon-list-text">Our Team</span>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-b6f2add" data-id="b6f2add" data-element_type="column">
-                                                                <div class="elementor-column-wrap elementor-element-populated">
-                                                                    <div class="elementor-widget-wrap">
-                                                                        <div class="elementor-element elementor-element-df35e25 elementor-widget elementor-widget-heading" data-id="df35e25" data-element_type="widget" data-widget_type="heading.default">
-                                                                            <div class="elementor-widget-container">
-                                                                                <h4 class="elementor-heading-title elementor-size-default">Get Involved</h4>		</div>
-                                                                        </div>
-                                                                        <div class="elementor-element elementor-element-56f2247 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="56f2247" data-element_type="widget" data-widget_type="icon-list.default">
-                                                                            <div class="elementor-widget-container">
-                                                                                <ul class="elementor-icon-list-items">
-                                                                                    <li class="elementor-icon-list-item">
-                                                                                        <span class="elementor-icon-list-text">Volunteer</span>
-                                                                                    </li>
-                                                                                    <li class="elementor-icon-list-item">
-                                                                                        <span class="elementor-icon-list-text">Donate</span>
-                                                                                    </li>
-                                                                                    <li class="elementor-icon-list-item">
-                                                                                        <span class="elementor-icon-list-text">Media</span>
-                                                                                    </li>
-                                                                                    <li class="elementor-icon-list-item">
-                                                                                        <span class="elementor-icon-list-text">Events</span>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-928ad03" data-id="928ad03" data-element_type="column">
-                                                                <div class="elementor-column-wrap elementor-element-populated">
-                                                                    <div class="elementor-widget-wrap">
-                                                                        <div class="elementor-element elementor-element-0e87959 elementor-widget elementor-widget-heading" data-id="0e87959" data-element_type="widget" data-widget_type="heading.default">
-                                                                            <div class="elementor-widget-container">
-                                                                                <h4 class="elementor-heading-title elementor-size-default">Projects</h4>		</div>
-                                                                        </div>
-                                                                        <div class="elementor-element elementor-element-4d6381a elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="4d6381a" data-element_type="widget" data-widget_type="icon-list.default">
-                                                                            <div class="elementor-widget-container">
-                                                                                <ul class="elementor-icon-list-items">
-                                                                                    <li class="elementor-icon-list-item">
-                                                                                        <span class="elementor-icon-list-text">FreeBMD</span>
-                                                                                    </li>
-                                                                                    <li class="elementor-icon-list-item">
-                                                                                        <span class="elementor-icon-list-text">FreeCEN</span>
-                                                                                    </li>
-                                                                                    <li class="elementor-icon-list-item">
-                                                                                        <span class="elementor-icon-list-text">FreeREG</span>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-9e6779b" data-id="9e6779b" data-element_type="column">
-                                                                <div class="elementor-column-wrap">
-                                                                    <div class="elementor-widget-wrap">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </section>
-                                                <div class="elementor-element elementor-element-231d17e elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="231d17e" data-element_type="widget" data-widget_type="divider.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <section class="elementor-section elementor-inner-section elementor-element elementor-element-71f7a39 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="71f7a39" data-element_type="section">
-                                                    <div class="elementor-container elementor-column-gap-default">
-                                                        <div class="elementor-row">
-                                                            <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-75fbf84" data-id="75fbf84" data-element_type="column">
-                                                                <div class="elementor-column-wrap elementor-element-populated">
-                                                                    <div class="elementor-widget-wrap">
-                                                                        <div class="elementor-element elementor-element-ff4123f elementor-widget elementor-widget-text-editor" data-id="ff4123f" data-element_type="widget" data-widget_type="text-editor.default">
-                                                                            <div class="elementor-widget-container">
-                                                                                <div class="elementor-text-editor elementor-clearfix"><p>Search engine, layout, and database Copyright 1998-2020 by Free UK Genealogy CIO, a charity registered in England and Wales, Number 1167484.</p><p>We make no warranty whatsoever as to the accuracy or completeness of the data</p></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-2e47934" data-id="2e47934" data-element_type="column">
-                                                                <div class="elementor-column-wrap elementor-element-populated">
-                                                                    <div class="elementor-widget-wrap">
-                                                                        <div class="elementor-element elementor-element-d963d01 elementor-widget elementor-widget-text-editor" data-id="d963d01" data-element_type="widget" data-widget_type="text-editor.default">
-                                                                            <div class="elementor-widget-container">
-                                                                                <div class="elementor-text-editor elementor-clearfix"><p>Privacy Policy</p></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-fc47f81" data-id="fc47f81" data-element_type="column">
-                                                                <div class="elementor-column-wrap elementor-element-populated">
-                                                                    <div class="elementor-widget-wrap">
-                                                                        <div class="elementor-element elementor-element-f79da7a elementor-widget elementor-widget-text-editor" data-id="f79da7a" data-element_type="widget" data-widget_type="text-editor.default">
-                                                                            <div class="elementor-widget-container">
-                                                                                <div class="elementor-text-editor elementor-clearfix"><p>Accessibility</p></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-dd0eeba" data-id="dd0eeba" data-element_type="column">
-                                                                <div class="elementor-column-wrap elementor-element-populated">
-                                                                    <div class="elementor-widget-wrap">
-                                                                        <div class="elementor-element elementor-element-8daab54 elementor-widget elementor-widget-text-editor" data-id="8daab54" data-element_type="widget" data-widget_type="text-editor.default">
-                                                                            <div class="elementor-widget-container">
-                                                                                <div class="elementor-text-editor elementor-clearfix"><p>Site Map</p></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-e725996" data-id="e725996" data-element_type="column">
-                                                                <div class="elementor-column-wrap elementor-element-populated">
-                                                                    <div class="elementor-widget-wrap">
-                                                                        <div class="elementor-element elementor-element-57bb3e7 elementor-widget elementor-widget-text-editor" data-id="57bb3e7" data-element_type="widget" data-widget_type="text-editor.default">
-                                                                            <div class="elementor-widget-container">
-                                                                                <div class="elementor-text-editor elementor-clearfix"><p>Attribution</p></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </section>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
+                <div>
+                    <button data-provider="paypal"
+							style="margin-bottom: 5px;"
+					>
+                        PayPal
+                    </button>
+                </div>
+                <div>
+                    <button data-provider="bank-transfer"
+							style="margin-bottom: 5px;"
+					>
+                        Bank Transfer
+                    </button>
+                </div>
+                <div>
+                    <button data-provider="cheque"
+							style="margin-bottom: 5px;"
+					>
+                        Cheque
+                    </button>
+                </div>
+                <div>
+                    <button class="previous"
+							style="margin-bottom: 5px;"
+					>
+                        Previous
+                    </button>
                 </div>
             </div>
+            <div
+                id="us-dollars-provider-selector"
+                style="display: none;"
+            >
+				<form action="https://www.paypal.com/donate" method="post" target="_top">
+					<input type="hidden" name="hosted_button_id" value="JKB65FJGRATHS" />
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+						   name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
+					/>
+					<img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+				</form>
+                <button class="previous">
+                    Previous
+                </button>
+            </div>
+            <div id="c-dollars-provider-selector"
+                 style="display: none;"
+            >
+				<form action="https://www.paypal.com/donate" method="post" target="_top">
+					<input type="hidden" name="hosted_button_id" value="3XMXJ8NHXLZR8" />
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+						   name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
+					/>
+					<img alt="" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
+				</form>
 
-        </main><!-- #main -->
+				<form action="https://www.paypal.com/donate" method="post" target="_top">
+					<input type="hidden" name="hosted_button_id" value="G5GD3T86WYPPW" />
+					<input type="image" src="https://www.paypalobjects.com/fr_CA/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+					<img alt="" src="https://www.paypal.com/fr_CA/i/scr/pixel.gif" width="1" height="1" />
+				</form>
+                <button class="previous">
+                    Previous
+                </button>
+            </div>
+            <div id="au-dollars-provider-selector"
+                 style="display: none;"
+            >
+                <form action="https://www.paypal.com/donate" method="post" target="_top">
+                    <input type="hidden" name="hosted_button_id" value="VKBJ5SAZRT3HW" />
+                    <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif"
+                           name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
+                    />
+                    <img alt="" src="https://www.paypal.com/en_AU/i/scr/pixel.gif" width="1" height="1" />
+                </form>
 
+                <button class="previous">
+                    Previous
+                </button>
+            </div>
+            <div id="nz-dollars-provider-selector"
+                 style="display: none;"
+            >
+				<form action="https://www.paypal.com/donate" method="post" target="_top">
+					<input type="hidden" name="hosted_button_id" value="83G6ZDU5V8HZ4" />
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+						   name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
+					/>
+					<img alt="" src="https://www.paypal.com/en_NZ/i/scr/pixel.gif" width="1" height="1" />
+				</form>
+                <button class="previous">
+                    Previous
+                </button>
+            </div>
+            <div id="euro-provider-selector"
+                 style="display: none;"
+            >
+				<form action="https://www.paypal.com/donate" method="post" target="_top">
+					<input type="hidden" name="hosted_button_id" value="GXWGGPW8QNMLL" />
+					<input type="image" src="https://www.paypalobjects.com/en_US/FR/i/btn/btn_donateCC_LG.gif"
+						   name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
+					/>
+					<img alt="" src="https://www.paypal.com/en_FR/i/scr/pixel.gif" width="1" height="1" />
+				</form>
+                <button class="previous">
+                    Previous
+                </button>
+            </div>
 
-
-
-
-
-
-    </div><!-- #wrap -->
-
-
-</div><!-- #outer-wrap -->
-
-
-
-<a id="scroll-top" class="scroll-top-right" href="#" style="display: inline;"><span class="fa fa-angle-up" aria-label="Scroll to the top of the page"></span></a>
-
-
-
-
-<script type="text/template" id="tmpl-elementor-templates-modal__header">
-    <div class="elementor-templates-modal__header__logo-area"></div>
-    <div class="elementor-templates-modal__header__menu-area"></div>
-    <div class="elementor-templates-modal__header__items-area">
-        <# if ( closeType ) { #>
-        <div class="elementor-templates-modal__header__close elementor-templates-modal__header__close--{{{ closeType }}} elementor-templates-modal__header__item">
-            <# if ( 'skip' === closeType ) { #>
-            <span>Skip</span>
-            <# } #>
-            <i class="eicon-close" aria-hidden="true" title="Close"></i>
-            <span class="elementor-screen-only">Close</span>
         </div>
-        <# } #>
-        <div id="elementor-template-library-header-tools"></div>
-    </div>
-</script>
+        <div
+			id="content-destination">
+            <div id="content-default">
 
-<script type="text/template" id="tmpl-elementor-templates-modal__header__logo">
-    <span class="elementor-templates-modal__header__logo__icon-wrapper e-logo-wrapper">
-		<i class="eicon-elementor"></i>
-	</span>
-    <span class="elementor-templates-modal__header__logo__title">{{{ title }}}</span>
-</script>
-<script type="text/template" id="tmpl-elementor-finder">
-    <div id="elementor-finder__search">
-        <i class="eicon-search"></i>
-        <input id="elementor-finder__search__input" placeholder="Type to find anything in Elementor">
-    </div>
-    <div id="elementor-finder__content"></div>
-</script>
+            </div>
+            <div
+                id="content-kindlink"
+                style="display: none;"
+            >
+                <iframe
+                    src="https://donate.kindlink.com/free-uk-genealogy/3553"
+                    style="width: 90%;
+                    height: 1400px;
+                    border: 0;">
+                    Your browser does not support iframes.
+                </iframe>
 
-<script type="text/template" id="tmpl-elementor-finder-results-container">
-    <div id="elementor-finder__no-results">No Results Found</div>
-    <div id="elementor-finder__results"></div>
-</script>
+            </div>
+            <div
+				id="content-paypal"
+				style="display: none;"
+            >
+				<form action="https://www.paypal.com/donate" method="post" target="_top">
+					<input type="hidden" name="hosted_button_id" value="MBP798XKMCCP4" />
+					<input
+						   type="image"
+						   src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif"
+						   name="submit" title="PayPal - The safer, easier way to pay online!"
+						   alt="Donate with PayPal button"
+					/>
+					<img alt="" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
+				</form>
+            </div>
+            <div
+                id="giftaid-eligible"
+				style="display: none"
+			>
+                <p>Are you eligible to give giftaid?  Find out <a
+                    href="https://www.gov.uk/donating-to-charity/gift-aid"
+                    target="_blank"
+                    >here</a>
+                </p>
+            </div>
+			<div
+				id="thank-you"
+				style="display: none"
+			>
+				<p>Thank you for your donation to FREEUKGenealogy!</p>
+			</div>
+            <div
+                    id="content-bank-transfer"
+                    style="display: none;"
+            >
+                <div
+                    id="giftaid-option-transfer"
+                    style="padding: 5px;"
+                >
+                    <div>
+                        <input type="radio" id="with-giftaid-transfer" name="ga-selector" value="giftaid">
+                        <label for="with-giftaid-transfer">Pay with Giftaid</label>
+                    </div>
 
-<script type="text/template" id="tmpl-elementor-finder__results__category">
-    <div class="elementor-finder__results__category__title">{{{ title }}}</div>
-    <div class="elementor-finder__results__category__items"></div>
-</script>
+                    <div>
+                        <input type="radio" id="without-giftaid-transfer" name="ga-selector" value="without">
+                        <label for="without-giftaid-transfer">Pay without Giftaid</label>
+                    </div>
+                    <div style="padding: 5px;">
+                        <button class="next-giftaid">Next</button>
+                    </div>
+                </div>
+                <div
+                    id="giftaid-form-transfer"
+                    style="display: none;"
+                >
+                    <iframe
+                            id="form-iframe"
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSdNF3GT1vXZjwNocEDbiWUpvtsVAhxzWNbbDLQ9LreH5DiA1g/viewform?embedded=true"
+                            width="640"
+                            height="500"
+                    >Loading…</iframe>
+                </div>
+                <h2>
+                    Bank Transfer (UK only)
+                </h2>
+                    <div>
+                        <p>
+                    		Funds can be transferred directly to Free UK Genealogy's bank account using internet banking.
+                		</p>
+						<h3>
+							Account Details
+						</h3>
+						<div class="transfer-list">
+							<ul>
+								<li>Sort Code: 40-52-40</li>
+								<li>Account Number: 00025629</li>
+								<li>Account Name: Free UK Genealogy</li>
+							</ul>
+						</div>
+                    </div>
 
-<script type="text/template" id="tmpl-elementor-finder__results__item">
-    <a href="{{ url }}" class="elementor-finder__results__item__link">
-        <div class="elementor-finder__results__item__icon">
-            <i class="eicon-{{{ icon }}}"></i>
+            </div>
+            <div
+                    id="content-cheque"
+                    style="display: none;"
+            >
+                <div
+                    id="giftaid-option-cheque"
+                    style="padding: 5px;"
+                >
+                    <div>
+                        <input type="radio" id="with-giftaid-cheque" name="ga-selector" value="giftaid">
+                        <label for="with-giftaid-cheque">Pay with Giftaid</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="without-giftaid-cheque" name="ga-selector" value="without">
+                        <label for="without-giftaid-cheque">Pay without Giftaid</label>
+                    </div>
+                    <div style="padding: 5px;">
+                        <button class="next-giftaid">Next</button>
+                    </div>
+                </div>
+                <div
+                    id="giftaid-form-cheque"
+                    style="display: none;"
+                >
+                    <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSdNF3GT1vXZjwNocEDbiWUpvtsVAhxzWNbbDLQ9LreH5DiA1g/viewform?embedded=true"
+                            width="640"
+                            height="600"
+                    >Loading…</iframe>
+                </div>
+
+                    <div>
+						<h2>
+                    		Cheque
+                		</h2>
+                        <p>Cheques made payable to Free UK Genealogy can be sent to: </p>
+
+                    <div class="address-list">
+                        <ul style="list-style-type: none">
+                            <li>Free UK Genealogy</li>
+                            <li>Erw Wen, Harford,</li>
+                            <li>Llanwrda,</li>
+                            <li>Carmarthenshire</li>
+                            <li>SA19 8DT,</li>
+                            <li>United Kingdom</li>
+                        </ul>
+                    </div>
+                    </div>
+
+                <div class="image-holder">
+
+                </div>
+            </div>
         </div>
-        <div class="elementor-finder__results__item__title">{{{ title }}}</div>
-        <# if ( description ) { #>
-        <div class="elementor-finder__results__item__description">- {{{ description }}}</div>
-        <# } #>
-    </a>
-    <# if ( actions.length ) { #>
-    <div class="elementor-finder__results__item__actions">
-        <# jQuery.each( actions, function() { #>
-        <a class="elementor-finder__results__item__action elementor-finder__results__item__action--{{ this.name }}" href="{{ this.url }}" target="_blank">
-            <i class="eicon-{{{ this.icon }}}"></i>
-        </a>
-        <# } ); #>
+        <script src="./donation.js"></script>
     </div>
-    <# } #>
-</script>
-<script type="text/javascript" id="252d80f7c-js-extra">
-    /* <![CDATA[ */
-    var localize = {"ajaxurl":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/admin-ajax.php","nonce":"fabaf6e10d"};
-    /* ]]> */
-</script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-content/uploads/essential-addons-elementor/734e5f942.min.js?ver=1611179821" id="252d80f7c-js"></script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-includes/js/imagesloaded.min.js?ver=4.1.4" id="imagesloaded-js"></script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-content/themes/oceanwp/assets/js/third/magnific-popup.min.js?ver=2.0.2" id="magnific-popup-js"></script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-content/themes/oceanwp/assets/js/third/lightbox.min.js?ver=2.0.2" id="oceanwp-lightbox-js"></script>
-<script type="text/javascript" id="oceanwp-main-js-extra">
-    /* <![CDATA[ */
-    var oceanwpLocalize = {"isRTL":"","menuSearchStyle":"disabled","sidrSource":null,"sidrDisplace":"1","sidrSide":"left","sidrDropdownTarget":"link","verticalHeaderTarget":"link","customSelects":".woocommerce-ordering .orderby, #dropdown_product_cat, .widget_categories select, .widget_archive select, .single-product .variations_form .variations select"};
-    /* ]]> */
-</script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-content/themes/oceanwp/assets/js/main.min.js?ver=2.0.2" id="oceanwp-main-js"></script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1" id="jquery-ui-core-js"></script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-includes/js/jquery/ui/mouse.min.js?ver=1.12.1" id="jquery-ui-mouse-js"></script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-includes/js/jquery/ui/draggable.min.js?ver=1.12.1" id="jquery-ui-draggable-js"></script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-includes/js/underscore.min.js?ver=1.8.3" id="underscore-js"></script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-includes/js/backbone.min.js?ver=1.4.0" id="backbone-js"></script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-content/plugins/elementor/assets/lib/backbone/backbone.marionette.min.js?ver=2.4.5.e1" id="backbone-marionette-js"></script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-content/plugins/elementor/assets/lib/backbone/backbone.radio.min.js?ver=1.0.4" id="backbone-radio-js"></script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-content/plugins/elementor/assets/js/common-modules.min.js?ver=3.0.16" id="elementor-common-modules-js"></script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.8.1" id="elementor-dialog-js"></script>
-<script type="text/javascript" id="wp-api-request-js-extra">
-    /* <![CDATA[ */
-    var wpApiSettings = {"root":"https:\/\/wp1.freeukgen.org.uk\/wp-json\/","nonce":"7ee958569a","versionString":"wp\/v2\/"};
-    /* ]]> */
-</script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-includes/js/api-request.min.js?ver=5.6" id="wp-api-request-js"></script>
-<script type="text/javascript" id="elementor-common-js-before">
-    var elementorCommonConfig = {"version":"3.0.16","isRTL":false,"isDebug":true,"isElementorDebug":false,"activeModules":["ajax","finder","connect"],"urls":{"assets":"https:\/\/wp1.freeukgen.org.uk\/wp-content\/plugins\/elementor\/assets\/","rest":"https:\/\/wp1.freeukgen.org.uk\/wp-json\/"},"ajax":{"url":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/admin-ajax.php","nonce":"e2d0c3ca5c"},"finder":{"data":{"edit":{"title":"Edit","dynamic":true,"name":"edit"},"general":{"title":"General","dynamic":false,"items":{"saved-templates":{"title":"Saved Templates","icon":"library-save","url":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/edit.php?post_type=elementor_library&tabs_group=library","keywords":["template","section","page","library"]},"system-info":{"title":"System Info","icon":"info-circle-o","url":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/admin.php?page=elementor-system-info","keywords":["system","info","environment","elementor"]},"role-manager":{"title":"Role Manager","icon":"person","url":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/admin.php?page=elementor-role-manager","keywords":["role","manager","user","elementor"]},"knowledge-base":{"title":"Knowledge Base","url":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/admin.php?page=go_knowledge_base_site","keywords":["help","knowledge","docs","elementor"]}},"name":"general"},"create":{"title":"Create","dynamic":false,"items":{"post":{"title":"Add New Post","icon":"plus-circle-o","url":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/edit.php?action=elementor_new_post&post_type=post&_wpnonce=1eb2b57775","keywords":["post","page","template","new","create"]},"page":{"title":"Add New Page","icon":"plus-circle-o","url":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/edit.php?action=elementor_new_post&post_type=page&_wpnonce=1eb2b57775","keywords":["post","page","template","new","create"]},"elementor_library":{"title":"Add New Template","icon":"plus-circle-o","url":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/edit.php?post_type=elementor_library#add_new","keywords":["post","page","template","new","create"]}},"name":"create"},"site":{"title":"Site","dynamic":false,"items":{"homepage":{"title":"Homepage","url":"https:\/\/wp1.freeukgen.org.uk","icon":"home-heart","keywords":["home","page"]},"wordpress-dashboard":{"title":"Dashboard","icon":"dashboard","url":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/","keywords":["dashboard","wordpress"]},"wordpress-menus":{"title":"Menus","icon":"wordpress","url":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/nav-menus.php","keywords":["menu","wordpress"]},"wordpress-themes":{"title":"Themes","icon":"wordpress","url":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/themes.php","keywords":["themes","wordpress"]},"wordpress-customizer":{"title":"Customizer","icon":"wordpress","url":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/customize.php","keywords":["customizer","wordpress"]},"wordpress-plugins":{"title":"Plugins","icon":"wordpress","url":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/plugins.php","keywords":["plugins","wordpress"]},"wordpress-users":{"title":"Users","icon":"wordpress","url":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/users.php","keywords":["users","profile","wordpress"]}},"name":"site"},"settings":{"title":"Settings","dynamic":false,"items":{"general-settings":{"title":"General Settings","url":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/admin.php?page=elementor","keywords":["general","settings","elementor"]},"advanced":{"title":"Advanced","url":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/admin.php?page=elementor#tab-advanced","keywords":["advanced","settings","elementor"]}},"name":"settings"},"tools":{"title":"Tools","dynamic":false,"items":{"tools":{"title":"Tools","icon":"tools","url":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/admin.php?page=elementor-tools","keywords":["tools","regenerate css","safe mode","debug bar","sync library","elementor"]},"replace-url":{"title":"Replace URL","icon":"tools","url":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/admin.php?page=elementor-tools#tab-replace_url","keywords":["tools","replace url","domain","elementor"]},"version-control":{"title":"Version Control","icon":"time-line","url":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/admin.php?page=elementor-tools#tab-versions","keywords":["tools","version","control","rollback","beta","elementor"]},"maintenance-mode":{"title":"Maintenance Mode","icon":"tools","url":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/admin.php?page=elementor-tools#tab-maintenance_mode","keywords":["tools","maintenance","coming soon","elementor"]}},"name":"tools"}},"i18n":{"finder":"Finder"}},"connect":[]};
-</script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-content/plugins/elementor/assets/js/common.min.js?ver=3.0.16" id="elementor-common-js"></script>
-<script type="text/javascript" id="elementor-app-loader-js-before">
-    var elementorAppConfig = {"menu_url":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/admin.php?page=elementor-app&ver=3.0.16#site-editor\/promotion","assets_url":"https:\/\/wp1.freeukgen.org.uk\/wp-content\/plugins\/elementor\/assets\/","return_url":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/edit.php?post_type=page&paged=2","site-editor":[]};
-</script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-content/plugins/elementor/assets/js/app-loader.min.js?ver=3.0.16" id="elementor-app-loader-js"></script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-includes/js/wp-embed.min.js?ver=5.6" id="wp-embed-js"></script>
-<!--[if lt IE 9]>
-<script type='text/javascript' src='https://wp1.freeukgen.org.uk/wp-content/themes/oceanwp/assets/js/third/html5.min.js?ver=2.0.2' id='html5shiv-js'></script>
-<![endif]-->
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.0.16" id="elementor-frontend-modules-js"></script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6" id="swiper-js"></script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.0.16" id="share-link-js"></script>
-<script type="text/javascript" id="elementor-frontend-js-before">
-    var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"3.0.16","is_static":false,"legacyMode":{"elementWrappers":true},"urls":{"assets":"https:\/\/wp1.freeukgen.org.uk\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":4897,"title":"Taz%20Tests%20Donation%20Idea%20%E2%80%94%20FreeUKGenealogy","excerpt":"","featuredImage":false},"user":{"roles":["administrator"]}};
-</script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.0.16" id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span>
-<script type="text/javascript" id="wp-util-js-extra">
-    /* <![CDATA[ */
-    var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
-    /* ]]> */
-</script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-includes/js/wp-util.min.js?ver=5.6" id="wp-util-js"></script>
-<script type="text/javascript" id="wpforms-elementor-js-extra">
-    /* <![CDATA[ */
-    var wpformsElementorVars = {"captcha_provider":"recaptcha","recaptcha_type":"v2"};
-    /* ]]> */
-</script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.6.4.1" id="wpforms-elementor-js"></script>
-<script type="text/javascript" id="elementor-admin-bar-js-before">
-    var elementorAdminBarConfig = {"elementor_edit_page":{"id":"elementor_edit_page","title":"Edit with Elementor","href":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/post.php?post=4897&action=elementor","children":[{"id":"elementor_app_site_editor","title":"Open Theme Builder","href":"https:\/\/wp1.freeukgen.org.uk\/wp-admin\/admin.php?page=elementor-app&ver=3.0.16#site-editor\/promotion","class":"elementor-app-link"}]}};
-</script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-content/plugins/elementor/assets/js/elementor-admin-bar.min.js?ver=3.0.16" id="elementor-admin-bar-js"></script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-includes/js/hoverintent-js.min.js?ver=2.2.1" id="hoverintent-js-js"></script>
-<script type="text/javascript" src="https://wp1.freeukgen.org.uk/wp-includes/js/admin-bar.min.js?ver=5.6" id="admin-bar-js"></script>
-
-
-<iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/box-469cf41adb11dc78be68c1ae7f9457a4.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe></body>
+</body>
 </html>

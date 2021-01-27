@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="donation-styles.css">
 </head>
 <body>
-    <div class="payment-holder">
+    <div class="payment-holder" style="width: 100%">
         <div id="title-payment">
             <div id="title-currency">
                 <p>Select Currency</p>
@@ -14,11 +14,13 @@
             <div id="title-kindlink"
                  style="display: none;"
             >
+				<h3></h3>
                 <img src="https://www.kindlink.com/img/kindlink-logo.svg" alt="Kindlink"/>
             </div>
             <div id="title-paypal"
                  style="display: none;"
             >
+				<h3></h3>
                 <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_100x26.png" alt="PayPal"/>
         	</div>
             <div id="title-bank-transfer"
@@ -201,7 +203,7 @@
             >
                 <iframe
                     src="https://donate.kindlink.com/free-uk-genealogy/3553"
-                    style="width: 90%;
+                    style="width: 640px;
                     height: 1400px;
                     border: 0;">
                     Your browser does not support iframes.
@@ -210,7 +212,8 @@
             </div>
             <div
 				id="content-paypal"
-				style="display: none;"
+				style="display: none;
+				height: 1400px;"
             >
 				<form action="https://www.paypal.com/donate" method="post" target="_top">
 					<input type="hidden" name="hosted_button_id" value="MBP798XKMCCP4" />
@@ -225,7 +228,7 @@
             </div>
             <div
                 id="giftaid-eligible"
-				style="display: none"
+				style="display: none;"
 			>
                 <p>Are you eligible to give giftaid?  Find out <a
                     href="https://www.gov.uk/donating-to-charity/gift-aid"
@@ -235,13 +238,14 @@
             </div>
 			<div
 				id="thank-you"
-				style="display: none"
+				style="display: none;"
 			>
 				<p>Thank you for your donation to FREEUKGenealogy!</p>
 			</div>
             <div
                     id="content-bank-transfer"
-                    style="display: none;"
+                    style="display: none;
+					height: 1400px;"
             >
                 <div
                     id="giftaid-option-transfer"
@@ -293,7 +297,8 @@
             </div>
             <div
                     id="content-cheque"
-                    style="display: none;"
+                    style="display: none;
+					height: 1400px;"
             >
                 <div
                     id="giftaid-option-cheque"

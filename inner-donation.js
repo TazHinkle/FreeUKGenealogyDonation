@@ -1,4 +1,5 @@
 
+var paymentHolder = document.getElementById('payment-holder');
 var nextButton = document.getElementById('next-button');
 var contentDestination = document.getElementById('content-destination');
 var providerContainer = document.getElementById('provider-selector');

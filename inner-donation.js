@@ -146,6 +146,7 @@ var handleGiftaidForm = function() {
     dividerContainer.style.display = 'none';
     if(document.getElementById('giftaid-form').style.display === 'none') {
         var giftaidRadio = document.querySelector('input[name="ga-selector"]:checked').value;
+        ukProviderContainer.style.display = 'none';
         document.getElementById('giftaid-eligible').style.display = 'none';
         if (giftaidRadio === 'giftaid') {
             document.getElementById('giftaid-option').style.display = 'none';
@@ -157,7 +158,6 @@ var handleGiftaidForm = function() {
             document.getElementById('giftaid-option').style.display = 'none';
             document.getElementById('thank-you').style.display = 'block';
             document.getElementById('giftaid-next').style.display = 'none';
-            ukProviderContainer.style.display = 'none';
             if(document.getElementById('title-cheque').style.display === 'block') {
                 document.getElementById('content-cheque').style.display = 'block';
             }

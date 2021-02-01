@@ -14,6 +14,7 @@ var contentBank = document.getElementById('content-bank-transfer');
 var contentCheque = document.getElementById('content-cheque');
 var prevContainer = document.getElementById('prev-container');
 var dividerContainer = document.getElementById('break-container');
+var provider = '';
 
 var clearContentDestination = function() {
     var contentItems = Array.prototype.slice.apply(
@@ -48,7 +49,7 @@ var advanceClickHandler = function() {
     clearTitleDestination();
     clearContentSelector();
     prevContainer.style.display = 'block';
-    var provider = document.getElementById(currency + '-provider-selector')
+    provider = document.getElementById(currency + '-provider-selector')
     provider.style.display = 'block';
         if(currency === 'gb-pounds') {
             provider.addEventListener(
@@ -72,7 +73,14 @@ var advanceClickHandler = function() {
 
 var previousEventHandler = function() {
     var selectorContainer = document.getElementById(currency + '-provider-selector');
-    if(selectorContainer.style.display !== 'none'){
+    if(
+        document.getElementById('giftaid-form').style.display !== 'none' ||
+        document.getElementById('thank-you').style.display !== 'none'
+    ) {
+        resetGiftaid();
+        advanceClickHandler();
+    }
+    else if(selectorContainer.style.display !== 'none'){
         clearTitleDestination();
         clearContentSelector();
         clearContentDestination();
@@ -134,20 +142,40 @@ var resetGiftaid = function() {
     document.getElementById('thank-you').style.display = 'none';
 }
 
-var loadGiftaidForm = function() {
-    // this must be changed a lot a lot.
-    var giftaidRadio = document.querySelector('input[name="ga-selector"]:checked').value;
-    document.getElementById('giftaid-eligible').style.display = 'none';
-    if (giftaidRadio === 'giftaid') {
-        document.getElementById('giftaid-option').style.display = 'none';
-        document.getElementById('giftaid-option').style.display = 'none';
-        document.getElementById('giftaid-form').style.display = 'inline';
+var handleGiftaidForm = function() {
+    dividerContainer.style.display = 'none';
+    if(document.getElementById('giftaid-form').style.display === 'none') {
+        var giftaidRadio = document.querySelector('input[name="ga-selector"]:checked').value;
+        document.getElementById('giftaid-eligible').style.display = 'none';
+        if (giftaidRadio === 'giftaid') {
+            document.getElementById('giftaid-option').style.display = 'none';
+            document.getElementById('giftaid-option').style.display = 'none';
+            document.getElementById('giftaid-form').style.display = 'inline';
 
+        }
+        else {
+            document.getElementById('giftaid-option').style.display = 'none';
+            document.getElementById('thank-you').style.display = 'block';
+            document.getElementById('giftaid-next').style.display = 'none';
+            ukProviderContainer.style.display = 'none';
+            if(document.getElementById('title-cheque').style.display === 'block') {
+                document.getElementById('content-cheque').style.display = 'block';
+            }
+            if(document.getElementById('title-bank-transfer').style.display === 'block') {
+                document.getElementById('content-bank-transfer').style.display = 'block';
+            }
+        }
     }
-    else {
-        document.getElementById('giftaid-option').style.display = 'none';
+    else if(document.getElementById('giftaid-form').style.display !== 'none') {
+        document.getElementById('giftaid-form').style.display = 'none';
         document.getElementById('thank-you').style.display = 'block';
         document.getElementById('giftaid-next').style.display = 'none';
+        if(document.getElementById('title-cheque').style.display === 'block') {
+            document.getElementById('content-cheque').style.display = 'block';
+        }
+        if(document.getElementById('title-bank-transfer').style.display === 'block') {
+            document.getElementById('content-bank-transfer').style.display = 'block';
+        }
     }
 };
 
@@ -159,7 +187,7 @@ nextButton.addEventListener(
 Array.from(giftaidNext).forEach(function(giftaidNextButton) {
     giftaidNextButton.addEventListener(
         'click',
-        loadGiftaidForm
+        handleGiftaidForm
     );
 });
 

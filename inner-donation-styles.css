@@ -9,6 +9,10 @@
     min-height: 300px;
 }
 
+input:checked + label {
+    text-shadow: 0.5px 0 0 #555, -0.5px 0 0 #555;
+}
+
 #title-payment {
     background: #F4F4F4;
     padding-top: 5px;

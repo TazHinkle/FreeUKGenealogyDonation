@@ -49,6 +49,7 @@ var advanceClickHandler = function() {
     clearTitleDestination();
     clearContentSelector();
     prevContainer.style.display = 'block';
+    document.getElementById('giftaid-next').style.paddingTop = '10%';
     provider = document.getElementById(currency + '-provider-selector')
     provider.style.display = 'block';
         if(currency === 'gb-pounds') {
@@ -79,6 +80,9 @@ var previousEventHandler = function() {
     ) {
         resetGiftaid();
         advanceClickHandler();
+        prevContainer.style.padding = '10%';
+        contentCheque.style.display = 'none';
+        contentBank.style.display = 'none';
     }
     else if(selectorContainer.style.display !== 'none'){
         clearTitleDestination();
@@ -93,6 +97,7 @@ var previousEventHandler = function() {
         if(document.getElementById('currency-selector').style.display !== 'none') {
             prevContainer.style.display = 'none';
             dividerContainer.style.display = 'none';
+            prevContainer.style.padding = '10%';
         }
     }
 };
@@ -121,15 +126,18 @@ var ukProviderClickHandler = function(event) {
             providerContent.style.display = 'none';
             document.getElementById('giftaid-option').style.display = 'block';
             document.getElementById('giftaid-next').style.display = 'block';
+            prevContainer.style.padding = '0';
 
         }
         if(provider === 'kindlink') {
             document.getElementById('content-kindlink').style.display = 'block';
             resetGiftaid();
+            prevContainer.style.padding = '10%';
         }
         if(provider === 'paypal') {
             document.getElementById('content-paypal').style.display = 'block';
             resetGiftaid();
+            prevContainer.style.padding = '10%';
         }
     }
 };

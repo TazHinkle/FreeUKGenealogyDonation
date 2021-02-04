@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>experimental-somethings</title>
+    <title>inner-donation</title>
     <link rel="stylesheet" href="inner-donation-styles.css">
 </head>
 <body>
-    <div class="payment-holder">
+    <div id="payment-holder">
         <div id="title-payment">
             <div id="title-currency">
                 <p style="font-weight: bold">Select Currency</p>
@@ -186,9 +186,18 @@
                 id="content-kindlink"
                 style="display: none;"
             >
-                <a href="https://donate.kindlink.com/free-uk-genealogy/3553" target="_blank">
+                <a href="https://donate.kindlink.com/free-uk-genealogy/3553" target="_top">
 					<img src="images/kindlink-btn.png" alt="kindlink button">
 				</a>
+
+<!--				<img src="images/kindlink-btn.png" alt="kindlink button" onclick="kindlinkNext()">-->
+<!--
+					<iframe-->
+<!--					class="form-iframe"-->
+<!--					src="https://donate.kindlink.com/free-uk-genealogy/3553?embedded=true"-->
+<!--					width="275"-->
+<!--					height="400"-->
+<!--				>Your browser does not support iframes…</iframe>-->
 
             </div>
 			<div
@@ -242,7 +251,7 @@
 				 style="display: none;"
 			 >
 				<iframe
-					id="form-iframe"
+					class="form-iframe"
 					src="https://docs.google.com/forms/d/e/1FAIpQLSdNF3GT1vXZjwNocEDbiWUpvtsVAhxzWNbbDLQ9LreH5DiA1g/viewform?embedded=true"
 					width="280"
 					height="400"
@@ -314,7 +323,21 @@
 				</button>
 			</div>
 		</div>
-        <script src="./inner-donation.js"></script>
     </div>
+	<div
+		id="kindlink-form"
+		style="display: none;"
+	>
+		<iframe
+			class="form-iframe"
+			src="https://donate.kindlink.com/free-uk-genealogy/3553?embedded=true"
+			height="590px"
+			width="100%"
+		>Your browser does not support iframes…</iframe>
+		<button class="previous">
+			Previous
+		</button>
+	</div>
+	<script src="./inner-donation.js"></script>
 </body>
 </html>

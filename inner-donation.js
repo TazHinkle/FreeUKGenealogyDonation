@@ -16,6 +16,7 @@ var prevContainer = document.getElementById('prev-container');
 var dividerContainer = document.getElementById('break-container');
 var provider = '';
 
+
 var clearContentDestination = function() {
     var contentItems = Array.prototype.slice.apply(
         contentDestination.children
@@ -73,16 +74,21 @@ var advanceClickHandler = function() {
 };
 
 var previousEventHandler = function() {
+    // code for kindlink in-site
+    // paymentHolder.style.display = 'block';
+    // document.getElementById('kindlink-form').style.display = 'none';
     var selectorContainer = document.getElementById(currency + '-provider-selector');
     if(
         document.getElementById('giftaid-form').style.display !== 'none' ||
         document.getElementById('thank-you').style.display !== 'none'
+        //|| document.getElementById('content-paypal').style.display !== 'none'
     ) {
         resetGiftaid();
         advanceClickHandler();
         prevContainer.style.padding = '10%';
         contentCheque.style.display = 'none';
         contentBank.style.display = 'none';
+        // document.getElementById('content-paypal').style.display = 'none';
     }
     else if(selectorContainer.style.display !== 'none'){
         clearTitleDestination();
@@ -137,6 +143,7 @@ var ukProviderClickHandler = function(event) {
         if(provider === 'paypal') {
             document.getElementById('content-paypal').style.display = 'block';
             resetGiftaid();
+            // ukProviderContainer.style.display = 'none';
             prevContainer.style.padding = '10%';
         }
     }
@@ -186,6 +193,12 @@ var handleGiftaidForm = function() {
         }
     }
 };
+
+// code for kindlink in-site
+var kindlinkNext = function() {
+    paymentHolder.style.display = 'none';
+    document.getElementById('kindlink-form').style.display = 'block';
+}
 
 nextButton.addEventListener(
     'click',

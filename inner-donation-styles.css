@@ -9,16 +9,6 @@
     min-height: 300px;
 }
 
-#kindlink-form {
-    margin: auto;
-    text-align: center;
-    border: solid #dedede;
-    border-radius: 20px;
-    box-shadow: 2px 2px 10px 2px #dedede;
-    max-height: 590px;
-    width: 80%;
-}
-
 input:checked + label {
     text-shadow: 0.5px 0 0 #555, -0.5px 0 0 #555;
 }
@@ -90,10 +80,6 @@ input:checked + label {
     text-decoration: underline;
 }
 
-#kindlink-form button:hover {
-    text-decoration: underline;
-}
-
 #payment-holder .next-giftaid {
     width: 90%;
 }
@@ -104,13 +90,6 @@ input:checked + label {
 }
 
 #payment-holder .previous {
-    background: #ffffff;
-    border-style: none;
-    color: #707070;
-    box-shadow: none;
-}
-
-#kindlink-form .previous {
     background: #ffffff;
     border-style: none;
     color: #707070;

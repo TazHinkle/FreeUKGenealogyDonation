@@ -107,6 +107,8 @@ input:checked + label {
 #payment-holder #next-button {
     width: 100%;
     margin-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 #payment-holder .previous {

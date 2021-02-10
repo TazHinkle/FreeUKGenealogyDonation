@@ -9,7 +9,7 @@
     <div id="payment-holder">
         <div id="title-payment">
             <div id="title-currency">
-                <p style="font-weight: bold">Select Currency</p>
+                <p style="text-shadow: 0.5px 0 0 #555, -0.5px 0 0 #555;">Select Currency</p>
             </div>
             <div id="title-kindlink"
                  style="display: none;"
@@ -27,6 +27,7 @@
                  style="display: none;"
             >
                 <h3>Bank Transfer</h3>
+				<p>(UK Only)</p>
             </div>
             <div id="title-cheque"
                  style="display: none;">
@@ -37,33 +38,30 @@
         <div id="content-selector">
             <div id="currency-selector">
                 <div class="d-inline">
-                    <div>
+                    <div class="d-inline-selection">
                         <input type="radio" id="gb-pounds" name="drone" value="gb-pounds" checked>
-                        <label for="gb-pounds">British pounds sterling</label>
+                        <label for="gb-pounds">GBP (£)</label>
                     </div>
-
-                    <div>
+					<div class="d-inline-selection">
+						<input type="radio" id="au-dollars" name="drone" value="au-dollars">
+						<label for="au-dollars">AUD ($)</label>
+					</div>
+					<div class="d-inline-selection">
                         <input type="radio" id="us-dollars" name="drone" value="us-dollars">
-                        <label for="us-dollars">American Dollars</label>
+                        <label for="us-dollars">USD ($)</label>
                     </div>
 
-                    <div>
+					<div class="d-inline-selection">
                         <input type="radio" id="c-dollars" name="drone" value="c-dollars">
-                        <label for="c-dollars">Canadian Dollars</label>
+                        <label for="c-dollars">CAD ($)</label>
                     </div>
-                    <div>
-                        <input type="radio" id="au-dollars" name="drone" value="au-dollars">
-                        <label for="au-dollars">Australian Dollars</label>
-                    </div>
-
-                    <div>
+					<div class="d-inline-selection">
+						<input type="radio" id="euro" name="drone" value="euro">
+						<label for="euro">EUR (€)</label>
+					</div>
+					<div class="d-inline-selection">
                         <input type="radio" id="nz-dollars" name="drone" value="nz-dollars">
-                        <label for="nz-dollars">New Zealand Dollars</label>
-                    </div>
-
-                    <div>
-                        <input type="radio" id="euro" name="drone" value="euro">
-                        <label for="euro">Euro</label>
+                        <label for="nz-dollars">NZD ($)</label>
                     </div>
                     <div><button id="next-button" type="submit">Next</button></div>
                 </div>
@@ -79,7 +77,7 @@
 						data-provider="kindlink"
 						style="margin-bottom: 5px;"
 					>
-                        Kindlink
+                        Donate by Card
                     </button>
                 </div>
 
@@ -108,8 +106,9 @@
             <div
                 id="us-dollars-provider-selector"
                 style="display: none;
-				 padding: 20%;"
+				padding: 15%;"
 			>
+				<h4 style="padding-bottom: 2%">USD ($)</h4>
 				<form action="https://www.paypal.com/donate" method="post" target="_top">
 					<input type="hidden" name="hosted_button_id" value="JKB65FJGRATHS" />
 					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
@@ -120,8 +119,9 @@
             </div>
             <div id="c-dollars-provider-selector"
                  style="display: none;
-				 padding: 20%;"
+				padding: 15%;"
 			>
+				<h4 style="padding-bottom: 2%">CAD ($) - English</h4>
 				<form action="https://www.paypal.com/donate" method="post" target="_top">
 					<input type="hidden" name="hosted_button_id" value="3XMXJ8NHXLZR8" />
 					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
@@ -129,7 +129,7 @@
 					/>
 					<img alt="" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
 				</form>
-
+				<h4 style="padding-bottom: 2%">CAD ($) - French</h4>
 				<form action="https://www.paypal.com/donate" method="post" target="_top">
 					<input type="hidden" name="hosted_button_id" value="G5GD3T86WYPPW" />
 					<input type="image" src="https://www.paypalobjects.com/fr_CA/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
@@ -138,8 +138,9 @@
             </div>
             <div id="au-dollars-provider-selector"
                  style="display: none;
-				 padding: 20%;"
-            >
+				padding: 15%;"
+			>
+				<h4 style="padding-bottom: 2%">AUD ($)</h4>
                 <form action="https://www.paypal.com/donate" method="post" target="_top">
                     <input type="hidden" name="hosted_button_id" value="VKBJ5SAZRT3HW" />
                     <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif"
@@ -150,8 +151,9 @@
             </div>
             <div id="nz-dollars-provider-selector"
                  style="display: none;
-				 padding: 20%;"
+				padding: 15%;"
 			>
+				<h4 style="padding-bottom: 2%">NZD ($)</h4>
 				<form action="https://www.paypal.com/donate" method="post" target="_top">
 					<input type="hidden" name="hosted_button_id" value="83G6ZDU5V8HZ4" />
 					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
@@ -162,8 +164,9 @@
             </div>
             <div id="euro-provider-selector"
                  style="display: none;
-				 padding: 20%;"
+				padding: 15%;"
 			>
+				<h4 style="padding-bottom: 2%">EUR (€)</h4>
 				<form action="https://www.paypal.com/donate" method="post" target="_top">
 					<input type="hidden" name="hosted_button_id" value="GXWGGPW8QNMLL" />
 					<input type="image" src="https://www.paypalobjects.com/en_US/FR/i/btn/btn_donateCC_LG.gif"
@@ -186,27 +189,31 @@
                 id="content-kindlink"
                 style="display: none;"
             >
-                <a href="https://donate.kindlink.com/free-uk-genealogy/3553" target="_top">
-					<img src="images/kindlink-btn.png" alt="kindlink button">
-				</a>
+				<div class="offsite">
+					<p>Pay using kindlink</p>
+                	<a href="https://donate.kindlink.com/free-uk-genealogy/3553" target="_top">
+						<img src="https://www.kindlink.com/img/kindlink-logo.svg" alt="kindlink button">
+					</a>
+				</div>
             </div>
 			<div
 				id="giftaid-eligible"
 				style="display: none;
 				line-height: 0.5;"
 			>
-				<p>Are you eligible to give giftaid?</p>
-				<p>Find out <a
+				<p>Increase your donation by 25%.</p>
+				<p><a
 					href="https://www.gov.uk/donating-to-charity/gift-aid"
 					target="_blank"
-				>here</a>
-				</p>
+				>Find out</a> if you can Gift Aid your</p>
+				<p>donation.</p>
 			</div>
             <div
+				class="offsite"
 				id="content-paypal"
-				style="display: none;
-				padding: 14%;"
+				style="display: none;"
             >
+				<p>Donate via PayPal</p>
 				<form action="https://www.paypal.com/donate" method="post" target="_top">
 					<input type="hidden" name="hosted_button_id" value="MBP798XKMCCP4" />
 					<input
@@ -218,24 +225,21 @@
 					<img alt="" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
 				</form>
             </div>
-			<div
-				id="thank-you"
-				style="display: none;"
-			>
-				<p>Thank you for your donation to FREEUKGenealogy!</p>
-			</div>
 			<div id="giftaid-option"
 				style="display: none;
 				padding: 5px;">
-				<div>
-					<input type="radio" id="with-giftaid-transfer" name="ga-selector" value="giftaid">
-					<label for="with-giftaid-transfer">Pay with Giftaid</label>
+				<div class="d-inline">
+					<div>
+						<input type="radio" id="with-giftaid-transfer" name="ga-selector" value="giftaid">
+						<label for="with-giftaid-transfer">Pay with Gift Aid</label>
+					</div>
+
+					<div>
+						<input type="radio" id="without-giftaid-transfer" name="ga-selector" value="without">
+						<label for="without-giftaid-transfer">Pay without Gift Aid</label>
+					</div>
 				</div>
 
-				<div>
-					<input type="radio" id="without-giftaid-transfer" name="ga-selector" value="without">
-					<label for="without-giftaid-transfer">Pay without Giftaid</label>
-				</div>
 			</div>
 			<div id="giftaid-form"
 				 style="display: none;"
@@ -251,9 +255,6 @@
                     id="content-bank-transfer"
                     style="display: none;"
             >
-                <h2>
-                    Bank Transfer (UK only)
-                </h2>
                     <div>
                         <p>
                     		Funds can be transferred directly to Free UK Genealogy's bank account using internet banking.
@@ -262,7 +263,7 @@
 							Account Details
 						</h3>
 						<div class="transfer-list">
-							<ul>
+							<ul style="list-style: none">
 								<li>Sort Code: 40-52-40</li>
 								<li>Account Number: 00025629</li>
 								<li>Account Name: Free UK Genealogy</li>
@@ -276,27 +277,30 @@
                     style="display: none;"
             >
                     <div>
-						<h2>
-                    		Cheque
-                		</h2>
                         <p>Cheques made payable to Free UK Genealogy can be sent to: </p>
 
-                    <div class="address-list">
-                        <ul style="list-style-type: none">
-                            <li>Free UK Genealogy</li>
-                            <li>Erw Wen, Harford,</li>
-                            <li>Llanwrda,</li>
-                            <li>Carmarthenshire</li>
-                            <li>SA19 8DT,</li>
-                            <li>United Kingdom</li>
-                        </ul>
+						<div class="address-list">
+							<ul
+								style="list-style-type: none;
+								padding-left: 25%;
+							">
+								<li>Free UK Genealogy</li>
+								<li>Erw Wen, Harford,</li>
+								<li>Llanwrda,</li>
+								<li>Carmarthenshire</li>
+								<li>SA19 8DT,</li>
+								<li>United Kingdom</li>
+							</ul>
+						</div>
                     </div>
-                    </div>
-
-                <div class="image-holder">
-
-                </div>
             </div>
+			<div
+				id="thank-you"
+				style="display: none;"
+			>
+				<p>Thank you for your donation to</p>
+				<img src="https://drive.google.com/file/d/1OfPFNQYrdrdgm47vqYv-hYlRSME1nVGz/view?usp=sharing">
+			</div>
         </div>
 
 		<div id="giftaid-next"

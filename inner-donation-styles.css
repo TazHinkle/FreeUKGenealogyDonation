@@ -27,6 +27,14 @@ input:checked + label {
     text-align: left;
 }
 
+#currency-selector .d-inline .d-inline-selection {
+    padding: 3px 45px 0 45px;
+}
+
+#giftaid-option .d-inline {
+    text-align: left;
+}
+
 .d-inline {
     display: inline-block;
 }
@@ -47,7 +55,7 @@ input:checked + label {
     text-align: left;
 }
 
-#payment-holder h6, p, h3, h2, label {
+#payment-holder h6, p, h4, h3, h2, label, ul {
     font-family: Source Sans Pro, sans-serif;
     font-style: normal;
 }
@@ -80,6 +88,18 @@ input:checked + label {
     text-decoration: underline;
 }
 
+#payment-holder .offsite {
+    border-style: solid;
+    border-color: #dedede;
+    background-color: #F4F4F4;
+    margin: 0 20% 0 20%;
+    padding-bottom: 4%;
+}
+
+#payment-holder .offsite a {
+    text-decoration: none;
+}
+
 #payment-holder .next-giftaid {
     width: 90%;
 }
@@ -99,11 +119,18 @@ input:checked + label {
 #payment-holder #gb-pounds-provider-selector button {
     background: #F4F4F4;
     color: #000;
+    border-width: 3px;
+}
+
+#payment-holder #gb-pounds-provider-selector button:hover {
+    color: #00857E;
 }
 
 #payment-holder #gb-pounds-provider-selector button:focus {
-    background: #00857E;
-    color: #fff;
+    border-color: #00857E;
+    color: #00857E;
+    background-color: #ffffff;
+    text-shadow: 0.5px 0 0 #555, -0.5px 0 0 #555;
 }
 
 /*.payment-holder .button-primary.focus,*/

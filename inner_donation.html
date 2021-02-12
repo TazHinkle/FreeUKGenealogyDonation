@@ -30,7 +30,7 @@
             </div>
             <div id="title-cheque"
                  style="display: none;">
-                <h3>Cheque</h3>
+                <h3>Cheque (UK only)</h3>
             </div>
         </div>
 
@@ -189,10 +189,12 @@
                 style="display: none;"
             >
 				<div class="offsite">
-					<p>Pay using kindlink</p>
-                	<a href="https://donate.kindlink.com/free-uk-genealogy/3553" target="_top">
-						<img src="https://www.kindlink.com/img/kindlink-logo.svg" alt="kindlink button">
-					</a>
+					<div>
+						<p>Donate using kindlink</p>
+						<a href="https://donate.kindlink.com/free-uk-genealogy/3553" target="_top">
+							<img src="https://www.kindlink.com/img/kindlink-logo.svg" alt="kindlink button">
+						</a>
+					</div>
 				</div>
             </div>
 			<div
@@ -212,17 +214,19 @@
 				id="content-paypal"
 				style="display: none;"
             >
-				<p>Donate via PayPal</p>
-				<form action="https://www.paypal.com/donate" method="post" target="_top">
-					<input type="hidden" name="hosted_button_id" value="MBP798XKMCCP4" />
-					<input
-						   type="image"
-						   src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif"
-						   name="submit" title="PayPal - The safer, easier way to pay online!"
-						   alt="Donate with PayPal button"
-					/>
-					<img alt="" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
-				</form>
+				<div>
+					<p>Donate via PayPal</p>
+					<form action="https://www.paypal.com/donate" method="post" target="_top">
+						<input type="hidden" name="hosted_button_id" value="MBP798XKMCCP4" />
+						<input
+							type="image"
+							src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif"
+							name="submit" title="PayPal - The safer, easier way to pay online!"
+							alt="Donate with PayPal button"
+						/>
+						<img alt="" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
+					</form>
+				</div>
             </div>
 			<div id="giftaid-option"
 				style="display: none;
@@ -230,12 +234,12 @@
 				<div class="d-inline">
 					<div>
 						<input type="radio" id="with-giftaid-transfer" name="ga-selector" value="giftaid">
-						<label for="with-giftaid-transfer">Pay with Gift Aid</label>
+						<label for="with-giftaid-transfer">Donate with Gift Aid</label>
 					</div>
 
 					<div>
 						<input type="radio" id="without-giftaid-transfer" name="ga-selector" value="without">
-						<label for="without-giftaid-transfer">Pay without Gift Aid</label>
+						<label for="without-giftaid-transfer">Donate without Gift Aid</label>
 					</div>
 				</div>
 
@@ -296,11 +300,15 @@
 			<div
 				id="thank-you"
 				style="display: none;
-				line-height: 0.5;
+				line-height: 0.25;
 				padding-top: 5px"
 			>
 				<p>Thank you for your donation to</p>
-				<p>Free UK Genealogy!</p>
+				<img
+					src="images/rgb_free_ukg_master_with_outline.png"
+					alt="FreeUKGen"
+					style="height: 32px;"
+				>
 			</div>
         </div>
 

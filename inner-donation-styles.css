@@ -92,12 +92,8 @@ input:checked + label {
     border-style: solid;
     border-color: #dedede;
     background-color: #F4F4F4;
-    margin: 0 20% 0 20%;
+    margin: 0 18% 0 18%;
     padding-bottom: 4%;
-}
-
-#payment-holder .offsite a {
-    text-decoration: none;
 }
 
 #payment-holder .next-giftaid {
@@ -134,20 +130,3 @@ input:checked + label {
     background-color: #ffffff;
     text-shadow: 0.5px 0 0 #555, -0.5px 0 0 #555;
 }
-
-/*.payment-holder .button-primary.focus,*/
-/*.payment-holder .button-primary:focus {*/
-/*    box-shadow:*/
-/*            0 0 0 1px #fff,*/
-/*            0 0 0 3px #007cba;*/
-/*}*/
-
-/*.payment-holder .button-primary.active,*/
-/*.payment-holder .button-primary.active:hover,*/
-/*.payment-holder .button-primary.active:focus,*/
-/*.payment-holder .button-primary:active {*/
-/*    background: #00669b;*/
-/*    border-color: #00669b;*/
-/*    box-shadow: none;*/
-/*    color: #fff;*/
-/*}*/

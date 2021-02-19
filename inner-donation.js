@@ -73,9 +73,13 @@ var advanceClickHandler = function() {
 
 var previousEventHandler = function() {
     var selectorContainer = document.getElementById(currency + '-provider-selector');
+    if(document.getElementById('redirect-next').style.display === 'block') {
+        document.getElementById('redirect-next').style.display = 'none';
+    }
     if(
         document.getElementById('giftaid-form').style.display !== 'none' ||
-        document.getElementById('thank-you').style.display !== 'none'
+        document.getElementById('content-cheque').style.display !== 'none' ||
+        document.getElementById('content-bank-transfer').style.display !== 'none'
     ) {
         resetGiftaid();
         advanceClickHandler();
@@ -146,7 +150,6 @@ var resetGiftaid = function() {
     document.getElementById('giftaid-form').style.display = 'none';
     document.getElementById('giftaid-option').style.display = 'none';
     document.getElementById('giftaid-next').style.display = 'none';
-    document.getElementById('thank-you').style.display = 'none';
 }
 
 var handleGiftaidForm = function() {
@@ -163,7 +166,7 @@ var handleGiftaidForm = function() {
         }
         else {
             document.getElementById('giftaid-option').style.display = 'none';
-            document.getElementById('thank-you').style.display = 'block';
+            document.getElementById('redirect-next').style.display = 'block';
             document.getElementById('giftaid-next').style.display = 'none';
             if(document.getElementById('title-cheque').style.display === 'block') {
                 document.getElementById('content-cheque').style.display = 'block';
@@ -175,7 +178,7 @@ var handleGiftaidForm = function() {
     }
     else if(document.getElementById('giftaid-form').style.display !== 'none') {
         document.getElementById('giftaid-form').style.display = 'none';
-        document.getElementById('thank-you').style.display = 'block';
+        document.getElementById('redirect-next').style.display = 'block';
         document.getElementById('giftaid-next').style.display = 'none';
         if(document.getElementById('title-cheque').style.display === 'block') {
             document.getElementById('content-cheque').style.display = 'block';

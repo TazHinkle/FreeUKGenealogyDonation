@@ -96,20 +96,24 @@ input:checked + label {
     padding-bottom: 4%;
 }
 
-#payment-holder .next-giftaid {
-    width: 90%;
+#payment-holder #giftaid-next, #redirect-next {
+    padding: 5% 10% 2% 10%;
 }
 
 #payment-holder #next-button {
-    width: 100%;
-    margin-top: 30px;
-    padding-left: 10%;
-    padding-right: 10%;
+    width: 80%;
+    margin-top: 10%;
+    padding: 0 10%;
+}
+
+#payment-holder #prev-container {
+    padding: 3% 10% 10% 10%;
 }
 
 #payment-holder .previous {
     background: #ffffff;
-    border-style: none;
+    border-style: solid;
+    border-color: #444444;
     color: #444444;
     box-shadow: none;
 }

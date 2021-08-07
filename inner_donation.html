@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>inner-donation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="inner-donation-styles.css">
 </head>
 <body>
@@ -62,9 +63,8 @@
                         <input type="radio" id="nz-dollars" name="drone" value="nz-dollars">
                         <label for="nz-dollars">NZD ($)</label>
                     </div>
-                    <div><button id="next-button" type="submit">Next</button></div>
                 </div>
-
+				<div><button id="next-button" type="submit">Next</button></div>
             </div>
             <div
                  id="gb-pounds-provider-selector"
@@ -299,24 +299,21 @@
         </div>
 
 		<div id="redirect-next"
-			 style="padding: 5px;
-			display: none;">
+			 style="display: none;"
+		>
 			<a href="https://wp1.freeukgen.org.uk/thank-you"><button>Next</button></a>
 		</div>
 
 		<div id="giftaid-next"
-			style="padding: 5px;
-			display: none;">
+			style="display: none;"
+		>
 			<button class="next-giftaid">Next</button>
 		</div>
 
 		<div id="prev-container"
-			 style="display: none;
-			 padding: 10%;">
+			 style="display: none;">
 			<div>
-				<button class="previous">
-					Previous
-				</button>
+				<button class="previous">Previous</button>
 			</div>
 		</div>
     </div>

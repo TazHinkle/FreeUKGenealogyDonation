@@ -97,25 +97,69 @@ input:checked + label {
 }
 
 #payment-holder #giftaid-next, #redirect-next {
-    padding: 5% 10% 2% 10%;
+    padding: 5% 0 0 0;
 }
 
 #payment-holder #next-button {
-    width: 80%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #444444;
+    width: 90%;
     margin-top: 10%;
     padding: 0 10%;
 }
 
+#payment-holder .next-giftaid-button {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #444444;
+    width: 90%;
+    margin-top: 10%;
+    padding: 0 10%;
+}
+
+#payment-holder .next-redirect-button {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #444444;
+    width: 90%;
+    margin-top: 10%;
+    padding: 0 10%;
+}
+
+/*#payment-holder #next-button:hover {*/
+/*    border-color: rgb(253, 253, 253);*/
+/*}*/
+
+/*#payment-holder .next-giftaid-button:hover {*/
+/*    border-color: rgb(253, 253, 253);*/
+/*}*/
+
+/*#payment-holder .next-redirect-button:hover {*/
+/*    border-color: rgb(253, 253, 253);*/
+/*}*/
+
 #payment-holder #prev-container {
-    padding: 3% 10% 10% 10%;
+    padding: 5% 0 10% 0;
 }
 
 #payment-holder .previous {
+    width: 90%;
+    background: #ffffff;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #444444;
+    color: #444444;
+    box-shadow: none;
+}
+
+#payment-holder #kindlink-offsite-button {
     background: #ffffff;
     border-style: solid;
     border-color: #444444;
     color: #444444;
     box-shadow: none;
+    padding-top: 8px;
 }
 
 #payment-holder #gb-pounds-provider-selector button {

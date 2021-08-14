@@ -13,6 +13,7 @@ var contentCheque = document.getElementById('content-cheque');
 var prevContainer = document.getElementById('prev-container');
 var dividerContainer = document.getElementById('break-container');
 var provider = '';
+var iframe = document.getElementById("form-iframe");
 
 
 var clearContentDestination = function() {
@@ -146,6 +147,7 @@ var handleGiftaidForm = function() {
     if(document.getElementById('giftaid-form').style.display === 'none') {
         var giftaidRadio = document.querySelector('input[name="ga-selector"]:checked').value;
         ukProviderContainer.style.display = 'none';
+        iframe.contentWindow.focus();
         document.getElementById('giftaid-eligible').style.display = 'none';
         if (giftaidRadio === 'giftaid') {
             document.getElementById('giftaid-option').style.display = 'none';

@@ -38,32 +38,35 @@
         <div id="content-selector">
             <div id="currency-selector">
                 <div class="d-inline">
-                    <div class="d-inline-selection">
-                        <input type="radio" id="gb-pounds" name="drone" value="gb-pounds" checked>
-                        <label for="gb-pounds">GBP (£)</label>
-                    </div>
-					<div class="d-inline-selection">
-						<input type="radio" id="au-dollars" name="drone" value="au-dollars">
-						<label for="au-dollars">AUD ($)</label>
-					</div>
-					<div class="d-inline-selection">
-                        <input type="radio" id="us-dollars" name="drone" value="us-dollars">
-                        <label for="us-dollars">USD ($)</label>
-                    </div>
+					<fieldset class="currency-fieldset">
+						<legend class="accessibility">Currencies</legend>
+						<div class="d-inline-selection">
+							<input type="radio" id="gb-pounds" name="drone" value="gb-pounds" checked>
+							<label for="gb-pounds">GBP (£)</label>
+						</div>
+						<div class="d-inline-selection">
+							<input type="radio" id="au-dollars" name="drone" value="au-dollars">
+							<label for="au-dollars">AUD ($)</label>
+						</div>
+						<div class="d-inline-selection">
+							<input type="radio" id="us-dollars" name="drone" value="us-dollars">
+							<label for="us-dollars">USD ($)</label>
+						</div>
 
-					<div class="d-inline-selection">
-                        <input type="radio" id="c-dollars" name="drone" value="c-dollars">
-                        <label for="c-dollars">CAD ($)</label>
-                    </div>
-					<div class="d-inline-selection">
-						<input type="radio" id="euro" name="drone" value="euro">
-						<label for="euro">EUR (€)</label>
-					</div>
-					<div class="d-inline-selection">
-                        <input type="radio" id="nz-dollars" name="drone" value="nz-dollars">
-                        <label for="nz-dollars">NZD ($)</label>
-                    </div>
-                </div>
+						<div class="d-inline-selection">
+							<input type="radio" id="c-dollars" name="drone" value="c-dollars">
+							<label for="c-dollars">CAD ($)</label>
+						</div>
+						<div class="d-inline-selection">
+							<input type="radio" id="euro" name="drone" value="euro">
+							<label for="euro">EUR (€)</label>
+						</div>
+						<div class="d-inline-selection">
+							<input type="radio" id="nz-dollars" name="drone" value="nz-dollars">
+							<label for="nz-dollars">NZD ($)</label>
+						</div>
+					</fieldset>
+				</div>
 				<div><button id="next-button" type="submit">Next</button></div>
             </div>
             <div
@@ -250,7 +253,7 @@
 				 style="display: none;"
 			 >
 				<iframe
-					class="form-iframe"
+					id="form-iframe"
 					src="https://docs.google.com/forms/d/e/1FAIpQLSdNF3GT1vXZjwNocEDbiWUpvtsVAhxzWNbbDLQ9LreH5DiA1g/viewform?embedded=true"
 					width="280"
 					height="400"

@@ -8,9 +8,10 @@
 </head>
 <body>
     <div id="payment-holder">
+		<h1 class="accessibility">Set up your payment</h1>
         <div id="title-payment">
             <div id="title-currency">
-                <h3>Select Currency</h3>
+                <h2>Select Currency</h2>
             </div>
             <div id="title-kindlink"
                  style="display: none;"
@@ -27,11 +28,11 @@
             <div id="title-bank-transfer"
                  style="display: none;"
             >
-                <h3>Bank Transfer (UK only)</h3>
+                <h2>Bank Transfer (UK only)</h2>
             </div>
             <div id="title-cheque"
                  style="display: none;">
-                <h3>Cheque (UK only)</h3>
+                <h2>Cheque (UK only)</h2>
             </div>
         </div>
 
@@ -110,7 +111,7 @@
                 style="display: none;
 				padding: 15%;"
 			>
-				<h4 style="padding-bottom: 2%">USD ($)</h4>
+				<h3 style="padding-bottom: 2%">USD ($)</h3>
 				<form action="https://www.paypal.com/donate" method="post" target="_top">
 					<input type="hidden" name="hosted_button_id" value="JKB65FJGRATHS" />
 					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
@@ -123,7 +124,7 @@
                  style="display: none;
 				padding: 15%;"
 			>
-				<h4 style="padding-bottom: 2%">CAD ($) - English</h4>
+				<h3 style="padding-bottom: 2%">CAD ($) - English</h3>
 				<form action="https://www.paypal.com/donate" method="post" target="_top">
 					<input type="hidden" name="hosted_button_id" value="3XMXJ8NHXLZR8" />
 					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
@@ -131,7 +132,7 @@
 					/>
 					<img alt="" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
 				</form>
-				<h4 style="padding-bottom: 2%">CAD ($) - French</h4>
+				<h3 style="padding-bottom: 2%">CAD ($) - French</h3>
 				<form action="https://www.paypal.com/donate" method="post" target="_top">
 					<input type="hidden" name="hosted_button_id" value="G5GD3T86WYPPW" />
 					<input type="image" src="https://www.paypalobjects.com/fr_CA/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
@@ -142,7 +143,7 @@
                  style="display: none;
 				padding: 15%;"
 			>
-				<h4 style="padding-bottom: 2%">AUD ($)</h4>
+				<h3 style="padding-bottom: 2%">AUD ($)</h3>
                 <form action="https://www.paypal.com/donate" method="post" target="_top">
                     <input type="hidden" name="hosted_button_id" value="VKBJ5SAZRT3HW" />
                     <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif"
@@ -155,7 +156,7 @@
                  style="display: none;
 				padding: 15%;"
 			>
-				<h4 style="padding-bottom: 2%">NZD ($)</h4>
+				<h3 style="padding-bottom: 2%">NZD ($)</h3>
 				<form action="https://www.paypal.com/donate" method="post" target="_top">
 					<input type="hidden" name="hosted_button_id" value="83G6ZDU5V8HZ4" />
 					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
@@ -168,7 +169,7 @@
                  style="display: none;
 				padding: 15%;"
 			>
-				<h4 style="padding-bottom: 2%">EUR (€)</h4>
+				<h3 style="padding-bottom: 2%">EUR (€)</h3>
 				<form action="https://www.paypal.com/donate" method="post" target="_top">
 					<input type="hidden" name="hosted_button_id" value="GXWGGPW8QNMLL" />
 					<input type="image" src="https://www.paypalobjects.com/en_US/FR/i/btn/btn_donateCC_LG.gif"
@@ -179,8 +180,7 @@
             </div>
 
         </div>
-        <div
-			id="content-destination">
+        <div id="content-destination">
 			<div id="break-container" style="display: none;">
 				<hr style="width: 90%">
 			</div>
@@ -195,25 +195,13 @@
 					<div>
 						<p>Donate by Card via</p>
 						<a href="https://donate.kindlink.com/free-uk-genealogy/3553" target="_top">
-							<button id="kindlink-offsite-button">
+							<button id="kindlink-offsite-button" tabindex="-1">
 								<img src="https://www.kindlink.com/img/kindlink-logo.svg" alt="kindlink button">
 							</button>
 						</a>
 					</div>
 				</div>
             </div>
-			<div
-				id="giftaid-eligible"
-				style="display: none;
-				line-height: 0.5;"
-			>
-				<p>Increase your donation by 25%.</p>
-				<p><a
-					href="https://www.gov.uk/donating-to-charity/gift-aid"
-					target="_blank"
-				>Find out</a> if you can Gift Aid your</p>
-				<p>donation.</p>
-			</div>
             <div
 				id="content-paypal"
 				style="display: none;"
@@ -232,33 +220,6 @@
 					</form>
 				</div>
             </div>
-			<div id="giftaid-option"
-				style="display: none;
-				padding: 5px;">
-				<div class="d-inline">
-					<div>
-						<input type="radio" id="with-giftaid-transfer" name="ga-selector" value="giftaid" checked>
-						<label for="with-giftaid-transfer">Donate with Gift Aid</label>
-					</div>
-
-					<div>
-						<input type="radio" id="without-giftaid-transfer" name="ga-selector" value="without">
-						<label for="without-giftaid-transfer">Donate without Gift Aid</label>
-					</div>
-				</div>
-
-			</div>
-
-			<div id="giftaid-form"
-				 style="display: none;"
-			 >
-				<iframe
-					id="form-iframe"
-					src="https://docs.google.com/forms/d/e/1FAIpQLSdNF3GT1vXZjwNocEDbiWUpvtsVAhxzWNbbDLQ9LreH5DiA1g/viewform?embedded=true"
-					width="280"
-					height="400"
-				>Loading…</iframe>
-			</div>
             <div
                     id="content-bank-transfer"
                     style="display: none;"
@@ -267,9 +228,9 @@
                         <p>
                     		Funds can be transferred directly to Free UK Genealogy's bank account using internet banking.
                 		</p>
-						<h3>
+						<h2>
 							Account Details
-						</h3>
+						</h2>
 						<div class="transfer-list">
 							<ul style="list-style: none">
 								<li>Sort Code: 40-52-40</li>
@@ -302,6 +263,44 @@
 						</div>
                     </div>
             </div>
+			<div
+				id="giftaid-eligible"
+				style="display: none;
+				line-height: 0.5;"
+			>
+				<p>Increase your donation by 25%.</p>
+				<p><a
+					href="https://www.gov.uk/donating-to-charity/gift-aid"
+					target="_blank"
+				>Find out</a> if you can Gift Aid your</p>
+				<p>donation.</p>
+			</div>
+			<div id="giftaid-option"
+				 style="display: none;
+				padding: 5px;">
+				<div class="d-inline">
+					<div>
+						<input type="radio" id="with-giftaid-transfer" name="ga-selector" value="giftaid" checked>
+						<label for="with-giftaid-transfer">Donate with Gift Aid</label>
+					</div>
+
+					<div>
+						<input type="radio" id="without-giftaid-transfer" name="ga-selector" value="without">
+						<label for="without-giftaid-transfer">Donate without Gift Aid</label>
+					</div>
+				</div>
+
+			</div>
+			<div id="giftaid-form"
+				 style="display: none;"
+			>
+				<iframe
+					id="form-iframe"
+					src="https://docs.google.com/forms/d/e/1FAIpQLSdNF3GT1vXZjwNocEDbiWUpvtsVAhxzWNbbDLQ9LreH5DiA1g/viewform?embedded=true"
+					width="280"
+					height="400"
+				>Loading…</iframe>
+			</div>
         </div>
 
 		<div id="redirect-next"

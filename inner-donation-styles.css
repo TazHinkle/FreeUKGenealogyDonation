@@ -55,7 +55,7 @@ input:checked + label {
     text-align: left;
 }
 
-#payment-holder h6, p, h4, h3, h2, label, ul {
+#payment-holder h6, p, h4, h3, h2, h1, label, ul {
     font-family: Source Sans Pro, sans-serif;
     font-style: normal;
 }
@@ -149,7 +149,6 @@ input:checked + label {
     box-shadow: none;
     padding-top: 8px;
 }
-
 
 #payment-holder button:focus {
     border-color: #00857E;

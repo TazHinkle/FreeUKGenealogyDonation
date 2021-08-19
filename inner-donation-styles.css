@@ -60,6 +60,11 @@ input:checked + label {
     font-style: normal;
 }
 
+#payment-holder h2 {
+    font-size: large;
+}
+
+
  /*Primary Button Rounded*/
 #payment-holder button {
     display: inline-block;
@@ -174,7 +179,7 @@ input:checked + label {
     text-shadow: 0.5px 0 0 #555, -0.5px 0 0 #555;
 }
 
-#payment-holder .currency-fieldset {
+#payment-holder .donation-fieldset {
     border-style: hidden;
 }
 

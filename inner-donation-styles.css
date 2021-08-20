@@ -64,7 +64,6 @@ input:checked + label {
     font-size: large;
 }
 
-
  /*Primary Button Rounded*/
 #payment-holder button {
     display: inline-block;

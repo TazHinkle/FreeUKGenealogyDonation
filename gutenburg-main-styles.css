@@ -1,0 +1,158 @@
+body {
+    font-family: "Source Sans Pro", Sans-serif;
+    position: relative;
+    background-color: #F9F9F9;
+    margin: 0;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h1, h3 {
+    text-shadow:
+            -1px -1px 0 #F9F9F9,
+            1px -1px 0 #F9F9F9,
+            -1px 1px 0 #F9F9F9,
+            1px 1px 0 #F9F9F9;
+}
+
+header {
+    padding: 0 5%;
+}
+
+header > h1 {
+    margin: 0;
+    padding: 24px 0;
+}
+
+main {
+    display: block;
+    position: relative;
+}
+
+
+.background-image{
+    margin: 0;
+    width: 100%;
+    background-image: url("https://wp1.freeukgen.org.uk/wp-content/uploads/2021/05/final-honeycomb-1.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 90%;
+    display: block;
+}
+
+.search-button-container {
+    padding: 4% 0 5% 0;
+}
+
+.search-button {
+    display: block;
+    background-color: #00857e;
+    border-radius: 8px;
+    border: 1px solid #00857e;
+    color: #ffffff;
+    max-width: 500px;
+    max-height: 115px;
+    width: 90%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 2%;
+    margin: 3% auto;
+}
+
+.search-button:hover, .search-button:focus {
+    background-color: #ffffff;
+    color: #00857E;
+    border: #00857E solid 1px;
+}
+
+.search-button img {
+    float: left;
+    padding-right: 2.75%;
+}
+
+.project-list {
+    text-align: center;
+    margin: auto;
+    display: block;
+    position: relative;
+}
+
+.projects-description {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    padding-bottom: 2%;
+}
+
+.project-container {
+    display: block;
+    padding: 2%;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 50%;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 380px) {
+    body {
+
+    }
+}
+
+@media (min-width: 450px) {
+    .background-image {
+
+        background-size: 82%;
+    }
+}
+
+@media (min-width: 540px) {
+    .background-image {
+        background-size: 72%;
+    }
+
+    .search-button {
+        font-size: 20px;
+        margin: 3% auto;
+    }
+}
+
+@media (min-width: 680px) {
+    .background-image {
+
+    }
+    .search-button {
+        padding: 1%;
+        margin: 2% auto;
+    }
+}
+
+@media (min-width: 880px) {
+    .main-title {
+        animation-duration: 2s;
+        animation-name: slidein;
+    }
+    .search-button-container {
+        padding: 1.5% 0 1% 0;
+    }
+    .search-button {
+        font-size: 1.25em;
+        margin: 1% auto;
+    }
+
+    .project-container {
+        display: inline-block;
+        padding: 2% 5% 2% 5%;
+    }
+}

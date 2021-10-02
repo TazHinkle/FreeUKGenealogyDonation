@@ -1,5 +1,5 @@
 body {
-    font-family: "Source Sans Pro", Sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     position: relative;
     background-color: #F9F9F9;
     margin: 0;
@@ -8,6 +8,11 @@ body {
 h1 {
     font-size: 48px;
 }
+
+h2 {
+    font-size: 36px;
+    margin: 0;
+    }
 
 h1, h3 {
     text-shadow:
@@ -75,7 +80,7 @@ main {
     padding-right: 2.75%;
 }
 
-.project-list {
+.project-container {
     text-align: center;
     margin: auto;
     display: block;
@@ -89,9 +94,65 @@ main {
     padding-bottom: 2%;
 }
 
-.project-container {
+.project-list-container {
+    margin: auto;
+}
+
+.single-project {
     display: block;
-    padding: 2%;
+    padding: 0 2%;
+    max-width: 210px;
+    margin: 0 auto;
+    vertical-align: top;
+}
+
+.action {
+    text-align: center;
+    margin: auto;
+    display: block;
+    position: relative;
+}
+
+.action-block {
+    display: block;
+    margin: 0 auto;
+    max-width: 180px;
+}
+
+.action-block h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.freebmd {
+    color: #c84182;
+    text-decoration: none;
+}
+
+.freecen {
+    color: #825da8;
+    text-decoration: none;
+}
+
+.freereg {
+    color: #007fad;
+    text-decoration: none;
+}
+
+.freeukg {
+    color: #00857e;
+    text-decoration: none;
+}
+
+.freebmd:hover,
+.freebmd:focus,
+.freecen:hover,
+.freecen:focus,
+.freereg:hover,
+.freereg:focus,
+.freeukg:hover,
+.freeukg:focus{
+    text-decoration: underline;
 }
 
 @keyframes slidein {
@@ -112,7 +173,6 @@ main {
 
 @media (min-width: 450px) {
     .background-image {
-
         background-size: 82%;
     }
 }
@@ -129,9 +189,7 @@ main {
 }
 
 @media (min-width: 680px) {
-    .background-image {
 
-    }
     .search-button {
         padding: 1%;
         margin: 2% auto;
@@ -151,8 +209,17 @@ main {
         margin: 1% auto;
     }
 
-    .project-container {
+    .single-project {
         display: inline-block;
-        padding: 2% 5% 2% 5%;
+    }
+
+    .action-block {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1150px) {
+    .background-image {
+        background-size: 68%;
     }
 }

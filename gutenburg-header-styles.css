@@ -1,6 +1,6 @@
 nav {
     background-color: #ffffff;
-    padding: 10px;
+    padding: 0;
     height: 5%;
     z-index: 3;
     position: relative;
@@ -8,7 +8,7 @@ nav {
 
 nav .logo {
     width: 30%;
-    padding: 20px 20px;
+    padding: 20px 20px 20px 40px;
 }
 
 nav ul {
@@ -134,13 +134,13 @@ nav .menu-btn:checked ~ .menu-icon .navicon:after {
 @media (min-width: 880px) {
     nav .logo {
         width: 20%;
-        padding: 20px 20px 20px 55px;
+        padding: 25px 20px 20px 75px;
     }
     nav li {
         float: left;
     }
     nav li a {
-        padding: 20px 15px;
+        padding: 25px 15px 20px 15px;
     }
     nav .menu {
         clear: none;
@@ -158,8 +158,13 @@ nav .menu-btn:checked ~ .menu-icon .navicon:after {
     nav .menu {
         font-size: large;
     }
+
+    nav .logo {
+        padding: 20px 20px 20px 115px;
+    }
+
     nav li a {
-        padding: 20px 20px;
+        padding: 25px 20px 20px 20px;
     }
 }
 

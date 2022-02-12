@@ -176,14 +176,14 @@ main {
     text-decoration: none;
 }
 
-.freebmd:hover,
-.freebmd:focus,
+a.freebmd:hover,
+a.freebmd:focus,
 .freecen:hover,
 .freecen:focus,
 .freereg:hover,
 .freereg:focus,
-.freeukg:hover,
-.freeukg:focus{
+a.freeukg:hover,
+a.freeukg:focus{
     text-decoration: underline;
 }
 

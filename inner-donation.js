@@ -5,6 +5,7 @@ var contentContainer = document.getElementById('content-selector');
 var ukProviderContainer = document.getElementById('gb-pounds-provider-selector');
 var previousCollection = document.getElementsByClassName('previous');
 var currencyContent = document.getElementById('currency-selector');
+var titleChoose = document.getElementById("title-choose");
 var titleDestination = document.getElementById('title-payment');
 var currency = '';
 var giftaidNext = document.getElementsByClassName('next-giftaid-button');
@@ -58,9 +59,8 @@ var advanceClickHandler = function() {
                 ukProviderClickHandler,
                 false
         );
-            document.getElementById('kindlink-button').focus();
-            document.getElementById('title-kindlink').style.display = 'block';
-            document.getElementById('content-kindlink').style.display = 'block';
+            titleChoose.style.display = 'block';
+            document.getElementById('content-default').style.display = 'block';
             dividerContainer.style.display = 'block';
         }
         else {
